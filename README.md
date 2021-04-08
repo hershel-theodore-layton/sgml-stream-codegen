@@ -2,7 +2,7 @@
 
 Build your own custom native sgml-stream tags from a json definition
 
-Build status: Failing on composer install when hhvm/hack-codegen can not be installed. This happens on the hhvm 4.73 build, but never builds do succeed. The version constraint will be updated once we don't need dev-master anymore.
+Build status: Failing on composer install when hhvm/hack-codegen can not be installed. This happens on the hhvm 4.73 build, but newer builds do succeed. The version constraint will be updated once we don't need dev-master anymore.
 
 ## What this code is
 
