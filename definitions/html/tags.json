@@ -1,0 +1,2457 @@
+{
+  "a": {
+    "attributes": {
+      "download": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-download",
+        "help": "A valid file name.",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-href",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "hreflang": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-hreflang",
+        "help": "A valid BCP 47 language tag.",
+        "type": "string"
+      },
+      "ping": {
+        "see": "https://html.spec.whatwg.org/multipage/#ping",
+        "help": "A space-separated list of http(s) urls.",
+        "type": "string"
+      },
+      "referrerpolicy": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-referrerpolicy",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "rel": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-rel",
+        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "type": "string"
+      },
+      "target": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-type",
+        "help": "A MIME type string.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-a-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "abbr": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-abbr-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "address": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-address-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "area": {
+    "attributes": {
+      "alt": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-area-alt",
+        "help": "Any text which is an adequate replacement for the missing image.",
+        "type": "string"
+      },
+      "coords": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-area-coords",
+        "help": "A list of comma separated floating point numbers.",
+        "type": "string"
+      },
+      "download": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-download",
+        "help": "A valid file name.",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-href",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "ping": {
+        "see": "https://html.spec.whatwg.org/multipage/#ping",
+        "help": "A space-separated list of http(s) urls.",
+        "type": "string"
+      },
+      "referrerpolicy": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-referrerpolicy",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "rel": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-rel",
+        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "type": "string"
+      },
+      "shape": {
+        "see": "https://html.spec.whatwg.org/multipage/#the-area-element:attr-area-shape",
+        "type": "enum",
+        "type_enum_values": [
+          "circle",
+          "default",
+          "poly",
+          "rect"
+        ]
+      },
+      "target": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-area-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "article": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-article-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "aside": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-aside-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "audio": {
+    "attributes": {
+      "autoplay": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-autoplay",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "controls": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-controls",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "crossorigin": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-crossorigin",
+        "type": "enum",
+        "type_enum_values": [
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "loop": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-loop",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "muted": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-muted",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "preload": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-preload",
+        "type": "enum",
+        "type_enum_values": [
+          "none",
+          "metadata",
+          "auto"
+        ]
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-audio-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "b": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-b-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "base": {
+    "attributes": {
+      "href": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-base-href",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "target": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-base-target",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-base-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "bdi": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-bdi-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "bdo": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-bdo-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "blockquote": {
+    "attributes": {
+      "cite": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-blockquote-cite",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-blockquote-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "body": {
+    "attributes": {
+      "onafterprint": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onafterprint",
+        "type": "string"
+      },
+      "onbeforeprint": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onbeforeprint",
+        "type": "string"
+      },
+      "onbeforeunload": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onbeforeunload",
+        "type": "string"
+      },
+      "onhashchange": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onhashchange",
+        "type": "string"
+      },
+      "onlanguagechange": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onlanguagechange",
+        "type": "string"
+      },
+      "onmessage": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onmessage",
+        "type": "string"
+      },
+      "onmessageerror": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onmessageerror",
+        "type": "string"
+      },
+      "onoffline": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onoffline",
+        "type": "string"
+      },
+      "ononline": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-ononline",
+        "type": "string"
+      },
+      "onpagehide": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onpagehide",
+        "type": "string"
+      },
+      "onpageshow": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onpageshow",
+        "type": "string"
+      },
+      "onpopstate": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onpopstate",
+        "type": "string"
+      },
+      "onrejectionhandled": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onrejectionhandled",
+        "type": "string"
+      },
+      "onstorage": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onstorage",
+        "type": "string"
+      },
+      "onunhandledrejection": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onunhandledrejection",
+        "type": "string"
+      },
+      "onunload": {
+        "see": "https://html.spec.whatwg.org/multipage/#handler-window-onunload",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-body-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "br": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-br-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "button": {
+    "attributes": {
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "formaction": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formaction",
+        "help": "A non-empty valid URL, potentially surrounded by whitespace.",
+        "type": "string"
+      },
+      "formenctype": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formenctype",
+        "type": "enum",
+        "type_enum_values": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data",
+          "text/plain"
+        ]
+      },
+      "formmethod": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formmethod",
+        "type": "enum",
+        "type_enum_values": [
+          "dialog",
+          "get",
+          "post"
+        ]
+      },
+      "formnovalidate": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formnovalidate",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "formtarget": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formtarget",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
+        "help": "Any name except for the empty string and isindex.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-button-type",
+        "type": "enum",
+        "type_enum_values": [
+          "submit",
+          "reset",
+          "button"
+        ]
+      },
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-button-value",
+        "help": "Any text is allowed.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-button-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "canvas": {
+    "attributes": {
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-canvas-height",
+        "type": "int"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-canvas-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-canvas-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "caption": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-caption-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "cite": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-cite-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "code": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-code-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "col": {
+    "attributes": {
+      "span": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-col-span",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-col-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "colgroup": {
+    "attributes": {
+      "span": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-colgroup-span",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-colgroup-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "data": {
+    "attributes": {
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-data-value",
+        "help": "Data in any machine-readable format.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-data-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "datalist": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-datalist-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "dd": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-dd-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "del": {
+    "attributes": {
+      "cite": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-mod-cite",
+        "help": "A URL.",
+        "type": "string"
+      },
+      "datetime": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-mod-datetime",
+        "help": "Valid date string with optional time. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time for more information.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-del-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "details": {
+    "attributes": {
+      "open": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-details-open",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-details-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "dfn": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-dfn-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "dialog": {
+    "attributes": {
+      "open": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dialog-open",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-dialog-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "div": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-div-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "dl": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-dl-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "dt": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-dt-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "em": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-em-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "embed": {
+    "attributes": {
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
+        "type": "int"
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-embed-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-embed-type",
+        "help": "A MIME type string.",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "comment": "Quoting the HTML spec:\n```\nAny other attribute that has no namespace (see prose).\n```\nAll attributes that do not contain a `:` are valid on this element and its type is always mixed. If the typechecker rejects your HTML, edit the definition of this tag, since it is always spec compliant to add more non-namespaced attributes.",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-embed-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "fieldset": {
+    "attributes": {
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fieldset-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
+        "help": "Any name except for the empty string and isindex.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-fieldset-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "figcaption": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-figcaption-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "figure": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-figure-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "footer": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-footer-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "form": {
+    "attributes": {
+      "accept-charset": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-form-accept-charset",
+        "help": "The only valid value is a case insensitive \"utf-8\".",
+        "type": "string"
+      },
+      "action": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-action",
+        "help": "A non-empty valid URL, potentially surrounded by whitespace.",
+        "type": "string"
+      },
+      "autocomplete": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-form-autocomplete",
+        "type": "enum",
+        "type_enum_values": [
+          "on",
+          "off"
+        ]
+      },
+      "enctype": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-enctype",
+        "type": "enum",
+        "type_enum_values": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data",
+          "text/plain"
+        ]
+      },
+      "method": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-method",
+        "type": "enum",
+        "type_enum_values": [
+          "dialog",
+          "get",
+          "post"
+        ]
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-form-name",
+        "help": "A name which is not the empty string. It must be unique within the context of the current form.",
+        "type": "string"
+      },
+      "novalidate": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-novalidate",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "rel": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-form-rel",
+        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "type": "string"
+      },
+      "target": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-target",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-form-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "h1": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-h1-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "h2": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-h2-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "h3": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-h3-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "h4": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-h4-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "h5": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-h5-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "h6": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-h6-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "head": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-head-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "header": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-header-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "hgroup": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-hgroup-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "hr": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-hr-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "html": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-html-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "i": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-i-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "iframe": {
+    "attributes": {
+      "allow": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-allow",
+        "help": "A serialized permission policy. See https://w3c.github.io/webappsec-permissions-policy/#ascii-serialization for more information.",
+        "type": "string"
+      },
+      "allowfullscreen": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-allowfullscreen",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
+        "type": "int"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-name",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "referrerpolicy": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-referrerpolicy",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "sandbox": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-sandbox",
+        "help": "A set of unique space-separated tokens. Examples of valid values are \"allow-forms\", \"allow-modals\", \"allow-orientation-lock\" and more may be added. See https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox for more information.",
+        "type": "string"
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "srcdoc": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-srcdoc",
+        "help": "Any number of comments and whitespace, optional doctype, any number of comments and whitespace, an html document, any number of comments and whitespace.",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-iframe-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "img": {
+    "attributes": {
+      "alt": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-alt",
+        "help": "Any text which is an adequate replacement for the missing image.",
+        "type": "string"
+      },
+      "crossorigin": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-crossorigin",
+        "type": "enum",
+        "type_enum_values": [
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "decoding": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-decoding",
+        "type": "enum",
+        "type_enum_values": [
+          "sync",
+          "async",
+          "auto"
+        ]
+      },
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
+        "type": "int"
+      },
+      "ismap": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-ismap",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "loading": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-loading",
+        "type": "enum",
+        "type_enum_values": [
+          "lazy",
+          "eager"
+        ]
+      },
+      "referrerpolicy": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-referrerpolicy",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "sizes": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-sizes",
+        "help": "Complex syntax requirement, see https://html.spec.whatwg.org/multipage/images.html#sizes-attribute.",
+        "type": "string"
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "srcset": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-img-srcset",
+        "help": "Any number of image candidate strings. See https://html.spec.whatwg.org/multipage/images.html#srcset-attribute for more information.",
+        "type": "string"
+      },
+      "usemap": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-usemap",
+        "help": "A hash-name reference to a map element.",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-img-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "input": {
+    "attributes": {
+      "accept": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-accept",
+        "help": "A comma separated list of \"audio/*\", \"video/*\", \"image/*\", a valid MIME type string with no parameters, file extensions starting with a \".\".",
+        "type": "string"
+      },
+      "alt": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-alt",
+        "help": "Any text which is an adequate replacement for the missing image.",
+        "type": "string"
+      },
+      "autocomplete": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-autocomplete",
+        "help": "Either \"on\" or \"off\", or autofill detail tokens.",
+        "type": "string"
+      },
+      "checked": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-checked",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "dirname": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
+        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the urlencoded parameters sent to the server.",
+        "type": "string"
+      },
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "formaction": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formaction",
+        "help": "A non-empty valid URL, potentially surrounded by whitespace.",
+        "type": "string"
+      },
+      "formenctype": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formenctype",
+        "type": "enum",
+        "type_enum_values": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data",
+          "text/plain"
+        ]
+      },
+      "formmethod": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formmethod",
+        "type": "enum",
+        "type_enum_values": [
+          "dialog",
+          "get",
+          "post"
+        ]
+      },
+      "formnovalidate": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formnovalidate",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "formtarget": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formtarget",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
+        "type": "int"
+      },
+      "list": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-list",
+        "help": "The id of a datalist element.",
+        "type": "string"
+      },
+      "max": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-max",
+        "help": "Acceptable values are defined by the type attribute.",
+        "type": "string"
+      },
+      "maxlength": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-maxlength",
+        "type": "int"
+      },
+      "min": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-min",
+        "help": "Acceptable values are defined by the type attribute.",
+        "type": "string"
+      },
+      "minlength": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-minlength",
+        "type": "int"
+      },
+      "multiple": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-multiple",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
+        "help": "Any name except for the empty string and isindex.",
+        "type": "string"
+      },
+      "pattern": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-pattern",
+        "help": "A JS regex pattern.",
+        "type": "string"
+      },
+      "placeholder": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-placeholder",
+        "help": "A string without a linefeed (\\n) or carriage return (\\r).",
+        "type": "string"
+      },
+      "readonly": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-readonly",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "required": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-required",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "size": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-size",
+        "type": "int"
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "step": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-step",
+        "help": "A positive non-zero floating point number or the literal string \"any\".",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-type",
+        "type": "enum",
+        "type_enum_values": [
+          "hidden",
+          "text",
+          "search",
+          "tel",
+          "url",
+          "email",
+          "password",
+          "date",
+          "month",
+          "week",
+          "time",
+          "datetime",
+          "number",
+          "range",
+          "color",
+          "checkbox",
+          "radio",
+          "file",
+          "submit",
+          "image",
+          "reset",
+          "button"
+        ]
+      },
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-input-value",
+        "help": "Any text is allowed.",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-input-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "ins": {
+    "attributes": {
+      "cite": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-mod-cite",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "datetime": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-mod-datetime",
+        "help": "Valid date string with optional time. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time for more information.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-ins-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "kbd": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-kbd-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "label": {
+    "attributes": {
+      "for": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-label-for",
+        "help": "The id of a labelable element.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-label-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "legend": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-legend-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "li": {
+    "attributes": {
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-li-value",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-li-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "link": {
+    "attributes": {
+      "as": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-as",
+        "help": "Common values are: \"script\" and \"style\". See https://fetch.spec.whatwg.org/#concept-request-destination for more information.",
+        "type": "string"
+      },
+      "color": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-color",
+        "help": "I CSS color value.",
+        "type": "string"
+      },
+      "crossorigin": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-crossorigin",
+        "type": "enum",
+        "type_enum_values": [
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "href": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-href",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "hreflang": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-hreflang",
+        "help": "A valid BCP 47 language tag.",
+        "type": "string"
+      },
+      "imagesizes": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-imagesizes",
+        "help": "Complex syntax requirement, see https://html.spec.whatwg.org/multipage/images.html#sizes-attribute.",
+        "type": "string"
+      },
+      "imagesrcset": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-imagesrcset",
+        "help": "Any number of image candidate strings. See https://html.spec.whatwg.org/multipage/images.html#srcset-attribute for more information.",
+        "type": "string"
+      },
+      "integrity": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-integrity",
+        "help": "Commonly a hash algorithm a \"-\" and a base64 encoded value of the hash. See https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute for more information.",
+        "type": "string"
+      },
+      "media": {
+        "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media",
+        "help": "A valid media query list. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list for more information.",
+        "type": "string"
+      },
+      "referrerpolicy": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-referrerpolicy",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "rel": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-rel",
+        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "type": "string"
+      },
+      "sizes": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-sizes",
+        "help": "Either the string \"any\" or two pixel values, separated by an \"x\"",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-link-type",
+        "help": "A MIME type string.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-link-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "main": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-main-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "map": {
+    "attributes": {
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-map-name",
+        "help": "Any name.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-map-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "mark": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-mark-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "menu": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-menu-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "meta": {
+    "attributes": {
+      "charset": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meta-charset",
+        "help": "The only valid value is a case insensitive \"utf-8\".",
+        "type": "string"
+      },
+      "content": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meta-content",
+        "help": "Valid values are defined based on the value of the \"name\" attribute.",
+        "type": "string"
+      },
+      "http-equiv": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meta-http-equiv",
+        "type": "enum",
+        "type_enum_values": [
+          "content-type",
+          "default-style",
+          "refresh",
+          "x-ua-compatible",
+          "content-security-policy"
+        ]
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meta-name",
+        "help": "Any name.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-meta-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "meter": {
+    "attributes": {
+      "high": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meter-high",
+        "type": "float"
+      },
+      "low": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meter-low",
+        "type": "float"
+      },
+      "max": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meter-max",
+        "type": "float"
+      },
+      "min": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meter-min",
+        "type": "float"
+      },
+      "optimum": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meter-optimum",
+        "type": "float"
+      },
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-meter-value",
+        "type": "float"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-meter-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "nav": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-nav-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "noscript": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-noscript-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "object": {
+    "attributes": {
+      "data": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-object-data",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
+        "type": "int"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-object-name",
+        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "usemap": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-usemap",
+        "help": "A hash-name reference to a map element.",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-object-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "ol": {
+    "attributes": {
+      "reversed": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-ol-reversed",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "start": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-ol-start",
+        "type": "int"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-ol-type",
+        "type": "enum",
+        "type_enum_values": [
+          "1",
+          "a",
+          "A",
+          "i",
+          "I"
+        ]
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-ol-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "optgroup": {
+    "attributes": {
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-optgroup-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "label": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-optgroup-label",
+        "help": "Any text is allowed.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-optgroup-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "option": {
+    "attributes": {
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-option-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "label": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-option-label",
+        "help": "Any non empty string.",
+        "type": "string"
+      },
+      "selected": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-option-selected",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-option-value",
+        "help": "Any text is allowed.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-option-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "output": {
+    "attributes": {
+      "for": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-output-for",
+        "help": "A set of unique space-separated tokens. Each of which is an id of an element in the same document.",
+        "type": "string"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
+        "help": "Any name except for the empty string and isindex.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-output-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "p": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-p-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "param": {
+    "attributes": {
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-param-name",
+        "help": "Any name.",
+        "type": "string"
+      },
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-param-value",
+        "help": "Any text is allowed.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-param-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "picture": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-picture-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "pre": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-pre-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "progress": {
+    "attributes": {
+      "max": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-progress-value",
+        "type": "float"
+      },
+      "value": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-progress-max",
+        "type": "float"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-progress-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "q": {
+    "attributes": {
+      "cite": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-q-cite",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-q-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "rp": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-rp-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "rt": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-rt-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "ruby": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-ruby-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "s": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-s-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "samp": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-samp-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "script": {
+    "attributes": {
+      "async": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-async",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "crossorigin": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-crossorigin",
+        "type": "enum",
+        "type_enum_values": [
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "defer": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-defer",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "integrity": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-integrity",
+        "help": "Commonly a hash algorithm a \"-\" and a base64 encoded value of the hash. See https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute for more information.",
+        "type": "string"
+      },
+      "nomodule": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-nomodule",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "referrerpolicy": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-referrerpolicy",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-script-type",
+        "help": "An empty string or a javascript MIME type for non module javascript. \"module\" for module javascript. Any other value makes this script tag a data block.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-script-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTagsAndUnescapedContent"
+    ]
+  },
+  "section": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-section-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "select": {
+    "attributes": {
+      "autocomplete": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-autocomplete",
+        "help": "Either \"on\" or \"off\", or autofill detail tokens.",
+        "type": "string"
+      },
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "multiple": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-select-multiple",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
+        "help": "Any name except for the empty string and isindex.",
+        "type": "string"
+      },
+      "required": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-select-required",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "size": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-select-size",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-select-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "slot": {
+    "attributes": {
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-slot-name",
+        "help": "Any name.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-slot-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "small": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-small-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "source": {
+    "attributes": {
+      "media": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-source-media",
+        "help": "A valid media query list. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list for more information.",
+        "type": "string"
+      },
+      "sizes": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-source-sizes",
+        "help": "Complex syntax requirement, see https://html.spec.whatwg.org/multipage/images.html#sizes-attribute.",
+        "type": "string"
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-source-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "srcset": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-source-srcset",
+        "help": "Any number of image candidate strings. See https://html.spec.whatwg.org/multipage/images.html#srcset-attribute for more information.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-source-type",
+        "help": "A MIME type string.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-source-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "span": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-span-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "strong": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-strong-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "style": {
+    "attributes": {
+      "media": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-style-media",
+        "help": "A valid media query list. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list for more information.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-style-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTagsAndUnescapedContent"
+    ]
+  },
+  "sub": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-sub-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "summary": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-summary-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "sup": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-sup-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "table": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-table-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "tbody": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-tbody-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "td": {
+    "attributes": {
+      "colspan": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-colspan",
+        "type": "int"
+      },
+      "headers": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-headers",
+        "help": "A set of unique space-separated tokens. Each of which is an id of a th element in the same table.",
+        "type": "string"
+      },
+      "rowspan": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-rowspan",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-td-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "template": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-template-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "textarea": {
+    "attributes": {
+      "autocomplete": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-autocomplete",
+        "help": "Either \"on\" or \"off\", or autofill detail tokens.",
+        "type": "string"
+      },
+      "cols": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-cols",
+        "type": "int"
+      },
+      "dirname": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
+        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the urlencoded parameters sent to the server.",
+        "type": "string"
+      },
+      "disabled": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-disabled",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "form": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
+        "help": "A valid id of a form element in the same tree.",
+        "type": "string"
+      },
+      "maxlength": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-maxlength",
+        "type": "int"
+      },
+      "minlength": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-minlength",
+        "type": "int"
+      },
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
+        "help": "Any name except for the empty string and isindex.",
+        "type": "string"
+      },
+      "placeholder": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-placeholder",
+        "help": "Any string is allowed. Line feeds and carriage represent are line breaks.",
+        "type": "string"
+      },
+      "readonly": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-readonly",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "required": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-required",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "rows": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-rows",
+        "type": "int"
+      },
+      "wrap": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-wrap",
+        "type": "enum",
+        "type_enum_values": [
+          "hard",
+          "soft"
+        ]
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-textarea-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "tfoot": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-tfoot-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "th": {
+    "attributes": {
+      "abbr": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-th-abbr",
+        "help": "An alternative label.",
+        "type": "string"
+      },
+      "colspan": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-colspan",
+        "type": "int"
+      },
+      "headers": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-headers",
+        "help": "A set of unique space-separated tokens. Each of which is an id of a th element in the same table.",
+        "type": "string"
+      },
+      "rowspan": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-rowspan",
+        "type": "int"
+      },
+      "scope": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-th-scope",
+        "type": "enum",
+        "type_enum_values": [
+          "col",
+          "colgroup",
+          "row",
+          "rowgroup"
+        ]
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-th-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "thead": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-thead-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "time": {
+    "attributes": {
+      "datetime": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-time-datetime",
+        "help": "Valid date string with optional time. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time for more information.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-time-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "title": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-title-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "tr": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-tr-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "track": {
+    "attributes": {
+      "default": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-track-default",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "kind": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-track-kind",
+        "type": "enum",
+        "type_enum_values": [
+          "subtitles",
+          "captions",
+          "descriptions",
+          "chapters",
+          "metadata"
+        ]
+      },
+      "label": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-track-label",
+        "help": "Any non empty string.",
+        "type": "string"
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-track-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "srclang": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-track-srclang",
+        "help": "A valid BCP 47 language tag.",
+        "type": "string"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-track-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  },
+  "u": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-u-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "ul": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-ul-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "var": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-var-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "video": {
+    "attributes": {
+      "autoplay": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-autoplay",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "controls": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-controls",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "crossorigin": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-crossorigin",
+        "type": "enum",
+        "type_enum_values": [
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
+        "type": "int"
+      },
+      "loop": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-loop",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "muted": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-muted",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "playsinline": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-video-playsinline",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "poster": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-video-poster",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "preload": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-preload",
+        "type": "enum",
+        "type_enum_values": [
+          "none",
+          "metadata",
+          "auto"
+        ]
+      },
+      "src": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-media-src",
+        "help": "A URL potentially surrounded by spaces.",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/#attr-dim-width",
+        "type": "int"
+      }
+    },
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-video-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "wbr": {
+    "attributes": {},
+    "base_class": "SGMLStream\\RootElement",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/#the-wbr-element",
+    "traits": [
+      "GlobalHTMLAttributes",
+      "SGMLStream\\ElementWithOpenTagOnly"
+    ]
+  }
+}

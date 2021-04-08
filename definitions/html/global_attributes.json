@@ -1,0 +1,430 @@
+{
+  "accesskey": {
+    "see": "https://html.spec.whatwg.org/multipage/#the-accesskey-attribute",
+    "help": "An ordered set of unique space-separated tokens none of which are identical to another token and each of which must be exactly one code point in length.",
+    "type": "string"
+  },
+  "autocapitalize": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-autocapitalize",
+    "type": "enum",
+    "type_enum_values": [
+      "off",
+      "none",
+      "on",
+      "sentences",
+      "words",
+      "characters"
+    ]
+  },
+  "autofocus": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-fe-autofocus",
+    "type": "SGMLStreamInterfaces\\BooleanAttribute"
+  },
+  "class": {
+    "see": "https://html.spec.whatwg.org/multipage/#classes",
+    "help": "A set of space-separated tokens representing the various classes that the element belongs to.",
+    "type": "string"
+  },
+  "contenteditable": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-contenteditable",
+    "help": "A tristate attribute, not a boolean attribute.",
+    "type": "enum",
+    "type_enum_values": [
+      "true",
+      "false"
+    ]
+  },
+  "dir": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-dir",
+    "type": "enum",
+    "type_enum_values": [
+      "auto",
+      "ltr",
+      "rtl"
+    ]
+  },
+  "draggable": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-draggable",
+    "help": "A tristate attribute, not a bool attribute.",
+    "type": "enum",
+    "type_enum_values": [
+      "true",
+      "false"
+    ]
+  },
+  "enterkeyhint": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-enterkeyhint",
+    "type": "enum",
+    "type_enum_values": [
+      "enter",
+      "done",
+      "go",
+      "next",
+      "previous",
+      "search",
+      "send"
+    ]
+  },
+  "hidden": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-hidden",
+    "type": "SGMLStreamInterfaces\\BooleanAttribute"
+  },
+  "id": {
+    "see": "https://html.spec.whatwg.org/multipage/#the-id-attribute",
+    "help": "A unique value amount all id attributes of the HTML elements in your document. At least one character in length and without ascii whitespace.",
+    "type": "string"
+  },
+  "inputmode": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-inputmode",
+    "type": "enum",
+    "type_enum_values": [
+      "none",
+      "text",
+      "tel",
+      "url",
+      "email",
+      "numeric",
+      "decimal",
+      "search"
+    ]
+  },
+  "is": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-is",
+    "help": "A valid custom element name.",
+    "type": "string"
+  },
+  "itemid": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-itemid",
+    "help": "A URL with optional surrounding whitespace.",
+    "type": "string"
+  },
+  "itemprop": {
+    "see": "https://html.spec.whatwg.org/multipage/#names:-the-itemprop-attribute",
+    "help": "A set of unique space-separated tokens. An empty value is not allowed.",
+    "type": "string"
+  },
+  "itemref": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-itemref",
+    "help": "A set of unique space-separated tokens referring to HTML element ids in the current document.",
+    "type": "string"
+  },
+  "itemscope": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-itemscope",
+    "type": "SGMLStreamInterfaces\\BooleanAttribute"
+  },
+  "itemtype": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-itemtype",
+    "help": "A set of unique absolute URLs.",
+    "type": "string"
+  },
+  "lang": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-lang",
+    "help": "A valid BCP 47 language tag or an empty string.",
+    "type": "string"
+  },
+  "nonce": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-nonce",
+    "help": "Any text is allowed.",
+    "type": "string"
+  },
+  "onabort": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onabort",
+    "type": "string"
+  },
+  "onauxclick": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onauxclick",
+    "type": "string"
+  },
+  "onblur": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onblur",
+    "type": "string"
+  },
+  "oncancel": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncancel",
+    "type": "string"
+  },
+  "oncanplay": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncanplay",
+    "type": "string"
+  },
+  "oncanplaythrough": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncanplaythrough",
+    "type": "string"
+  },
+  "onchange": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onchange",
+    "type": "string"
+  },
+  "onclick": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onclick",
+    "type": "string"
+  },
+  "onclose": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onclose",
+    "type": "string"
+  },
+  "oncontextmenu": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncontextmenu",
+    "type": "string"
+  },
+  "oncopy": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncopy",
+    "type": "string"
+  },
+  "oncuechange": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncuechange",
+    "type": "string"
+  },
+  "oncut": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oncut",
+    "type": "string"
+  },
+  "ondblclick": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondblclick",
+    "type": "string"
+  },
+  "ondrag": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondrag",
+    "type": "string"
+  },
+  "ondragend": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondragend",
+    "type": "string"
+  },
+  "ondragenter": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondragenter",
+    "type": "string"
+  },
+  "ondragleave": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondragleave",
+    "type": "string"
+  },
+  "ondragover": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondragover",
+    "type": "string"
+  },
+  "ondragstart": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondragstart",
+    "type": "string"
+  },
+  "ondrop": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondrop",
+    "type": "string"
+  },
+  "ondurationchange": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ondurationchange",
+    "type": "string"
+  },
+  "onemptied": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onemptied",
+    "type": "string"
+  },
+  "onended": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onended",
+    "type": "string"
+  },
+  "onerror": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onerror",
+    "type": "string"
+  },
+  "onfocus": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onfocus",
+    "type": "string"
+  },
+  "onformdata": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onformdata",
+    "type": "string"
+  },
+  "oninput": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oninput",
+    "type": "string"
+  },
+  "oninvalid": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-oninvalid",
+    "type": "string"
+  },
+  "onkeydown": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onkeydown",
+    "type": "string"
+  },
+  "onkeypress": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onkeypress",
+    "type": "string"
+  },
+  "onkeyup": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onkeyup",
+    "type": "string"
+  },
+  "onload": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onload",
+    "type": "string"
+  },
+  "onloadeddata": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onloadeddata",
+    "type": "string"
+  },
+  "onloadedmetadata": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onloadedmetadata",
+    "type": "string"
+  },
+  "onloadstart": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onloadstart",
+    "type": "string"
+  },
+  "onmousedown": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmousedown",
+    "type": "string"
+  },
+  "onmouseenter": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmouseenter",
+    "type": "string"
+  },
+  "onmouseleave": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmouseleave",
+    "type": "string"
+  },
+  "onmousemove": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmousemove",
+    "type": "string"
+  },
+  "onmouseout": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmouseout",
+    "type": "string"
+  },
+  "onmouseover": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmouseover",
+    "type": "string"
+  },
+  "onmouseup": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onmouseup",
+    "type": "string"
+  },
+  "onpaste": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onpaste",
+    "type": "string"
+  },
+  "onpause": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onpause",
+    "type": "string"
+  },
+  "onplay": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onplay",
+    "type": "string"
+  },
+  "onplaying": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onplaying",
+    "type": "string"
+  },
+  "onprogress": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onprogress",
+    "type": "string"
+  },
+  "onratechange": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onratechange",
+    "type": "string"
+  },
+  "onreset": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onreset",
+    "type": "string"
+  },
+  "onresize": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onresize",
+    "type": "string"
+  },
+  "onscroll": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onscroll",
+    "type": "string"
+  },
+  "onsecuritypolicyviolation": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onsecuritypolicyviolation",
+    "type": "string"
+  },
+  "onseeked": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onseeked",
+    "type": "string"
+  },
+  "onseeking": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onseeking",
+    "type": "string"
+  },
+  "onselect": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onselect",
+    "type": "string"
+  },
+  "onslotchange": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onslotchange",
+    "type": "string"
+  },
+  "onstalled": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onstalled",
+    "type": "string"
+  },
+  "onsubmit": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onsubmit",
+    "type": "string"
+  },
+  "onsuspend": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onsuspend",
+    "type": "string"
+  },
+  "ontimeupdate": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ontimeupdate",
+    "type": "string"
+  },
+  "ontoggle": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-ontoggle",
+    "type": "string"
+  },
+  "onvolumechange": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onvolumechange",
+    "type": "string"
+  },
+  "onwaiting": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onwaiting",
+    "type": "string"
+  },
+  "onwheel": {
+    "see": "https://html.spec.whatwg.org/multipage/#handler-onwheel",
+    "type": "string"
+  },
+  "role": {
+    "see": "https://html.spec.whatwg.org/#global-attributes:attr-aria-role",
+    "type": "string"
+  },
+  "slot": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-slot",
+    "help": "As far as I understand, any string is valid, since <slot name=?> is allowed to be any string.",
+    "type": "string"
+  },
+  "spellcheck": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-spellcheck",
+    "help": "A tristate attribute, not a boolean attribute.",
+    "type": "enum",
+    "type_enum_values": [
+      "true",
+      "false"
+    ]
+  },
+  "style": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-style",
+    "help": "Valid CSS, see https://drafts.csswg.org/css-style-attr/ for more information.",
+    "type": "string"
+  },
+  "tabindex": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-tabindex",
+    "type": "int"
+  },
+  "title": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-title",
+    "help": "Any text is allowed.",
+    "type": "string"
+  },
+  "translate": {
+    "see": "https://html.spec.whatwg.org/multipage/#attr-translate",
+    "type": "enum",
+    "type_enum_values": [
+      "yes",
+      "no"
+    ]
+  }
+}
