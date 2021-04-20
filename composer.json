@@ -3,11 +3,11 @@
   "description": "Build your own custom native sgml-stream tags from a json definition.",
   "license": "MIT",
   "require": {
-    "hhvm": "^4.73",
+    "hhvm": "^4.80",
     "hhvm/hsl": "^4.41",
-    "facebook/hack-codegen": "dev-master",
+    "facebook/hack-codegen": "^4.4",
     "hhvm/type-assert": "^4.2",
-    "hershel-theodore-layton/sgml-stream": ">0.2"
+    "hershel-theodore-layton/sgml-stream": "^0.3"
   },
   "require-dev": {
     "hhvm/hhvm-autoload": "^3.2",
