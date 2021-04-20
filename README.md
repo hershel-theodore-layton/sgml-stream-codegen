@@ -2,8 +2,6 @@
 
 Build your own custom native sgml-stream tags from a json definition
 
-Build status: Failing on composer install when hhvm/hack-codegen can not be installed. This happens on the hhvm 4.73 build, but newer builds do succeed. The version constraint will be updated once we don't need dev-master anymore.
-
 ## What this code is
 
 This code powers the codegen for html-stream-(non)-namespaced. Those packages are all you need if you wish to use a vanilla, pure to the spec, xhp implementation. If you wish to add some things of your own, you can use this code to adapt your version of html-stream to your needs. This codebase is not a library. We don't intend make this a composer package. If you wish to use this code, use `git clone`.
