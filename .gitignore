@@ -1,3 +1,5 @@
 composer.lock
 **/*.hhast.parser-cache
+.var/
 vendor/
+.vscode/
