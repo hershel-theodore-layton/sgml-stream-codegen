@@ -10,3 +10,4 @@ check_xhp_attribute = true
 disable_xhp_children_declarations=true
 disable_xhp_element_mangling=true
 enable_xhp_class_modifier=true
+ignored_paths = [ "build/**" ]

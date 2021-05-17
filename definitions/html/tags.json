@@ -52,31 +52,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-a-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "abbr": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-abbr-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "address": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-address-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -143,31 +140,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-area-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "article": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-article-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "aside": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-aside-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -212,21 +206,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-audio-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "b": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-b-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -243,31 +235,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-base-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "bdi": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-bdi-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "bdo": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-bdo-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -279,11 +268,10 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-blockquote-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -354,21 +342,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-body-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "br": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-br-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
@@ -435,11 +421,10 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-button-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -454,41 +439,37 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-canvas-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "caption": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-caption-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "cite": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-cite-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "code": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-code-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -499,11 +480,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-col-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
@@ -514,11 +494,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-colgroup-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -530,31 +509,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-data-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "datalist": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-datalist-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "dd": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-dd-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -571,11 +547,10 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-del-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -586,21 +561,19 @@
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-details-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "dfn": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-dfn-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -611,51 +584,46 @@
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-dialog-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "div": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-div-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "dl": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-dl-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "dt": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-dt-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "em": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-em-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -680,12 +648,11 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "comment": "Quoting the HTML spec:\n```\nAny other attribute that has no namespace (see prose).\n```\nAll attributes that do not contain a `:` are valid on this element and its type is always mixed. If the typechecker rejects your HTML, edit the definition of this tag, since it is always spec compliant to add more non-namespaced attributes.",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-embed-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -706,41 +673,37 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-fieldset-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "figcaption": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-figcaption-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "figure": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-figure-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "footer": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-footer-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -802,131 +765,118 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-form-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "h1": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-h1-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "h2": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-h2-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "h3": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-h3-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "h4": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-h4-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "h5": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-h5-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "h6": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-h6-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "head": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-head-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "header": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-header-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "hgroup": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-hgroup-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "hr": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-hr-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "html": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-html-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "i": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-i-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -985,11 +935,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-iframe-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1073,11 +1022,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-img-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
@@ -1254,11 +1202,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-input-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
@@ -1275,21 +1222,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-ins-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "kbd": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-kbd-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1301,21 +1246,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-label-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "legend": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-legend-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1326,11 +1269,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-li-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1419,21 +1361,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-link-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "main": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-main-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1445,31 +1385,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-map-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "mark": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-mark-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "menu": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-menu-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1502,11 +1439,10 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-meta-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
@@ -1537,31 +1473,28 @@
         "type": "float"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-meter-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "nav": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-nav-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "noscript": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-noscript-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1596,11 +1529,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-object-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1626,11 +1558,10 @@
         ]
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-ol-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1646,11 +1577,10 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-optgroup-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1675,11 +1605,10 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-option-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1701,21 +1630,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-output-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "p": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-p-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1732,31 +1659,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-param-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "picture": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-picture-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "pre": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-pre-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1771,11 +1695,10 @@
         "type": "float"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-progress-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1787,61 +1710,55 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-q-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "rp": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-rp-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "rt": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-rt-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "ruby": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-ruby-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "s": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-s-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "samp": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-samp-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1898,21 +1815,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-script-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTagsAndUnescapedContent"
     ]
   },
   "section": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-section-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1950,11 +1865,10 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-select-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -1966,21 +1880,19 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-slot-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "small": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-small-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2012,31 +1924,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-source-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "span": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-span-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "strong": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-strong-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2048,61 +1957,55 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-style-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTagsAndUnescapedContent"
     ]
   },
   "sub": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-sub-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "summary": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-summary-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "sup": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-sup-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "table": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-table-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "tbody": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-tbody-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2122,21 +2025,19 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-td-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "template": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-template-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2204,21 +2105,19 @@
         ]
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-textarea-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "tfoot": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-tfoot-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2253,21 +2152,19 @@
         ]
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-th-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "thead": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-thead-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2279,31 +2176,28 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-time-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "title": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-title-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "tr": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-tr-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2340,41 +2234,37 @@
         "type": "string"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-track-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "u": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-u-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "ul": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-ul-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "var": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-var-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
@@ -2436,21 +2326,19 @@
         "type": "int"
       }
     },
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-video-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "wbr": {
     "attributes": {},
-    "base_class": "SGMLStream\\RootElement",
+    "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-wbr-element",
     "traits": [
-      "GlobalHTMLAttributes",
       "SGMLStream\\ElementWithOpenTagOnly"
     ]
   }
