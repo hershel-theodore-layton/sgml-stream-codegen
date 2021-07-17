@@ -1,6 +1,6 @@
-build
+.var/
+.vscode/
+build/
+vendor/
 composer.lock
 **/*.hhast.parser-cache
-.var/
-vendor/
-.vscode/
