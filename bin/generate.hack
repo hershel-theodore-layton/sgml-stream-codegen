@@ -119,25 +119,4 @@ async function generate_async(): Awaitable<void> {
       )),
   )
     ->save();
-
-  // @deprecated
-  $codegen_file = (
-    new CodegenFile($config, $build_dir.'/GlobalHTMLAttributes.hack')
-  )
-    ->setFileType(CodegenFileType::DOT_HACK)
-    ->useNamespace('HTL\\SGMLStreamInterfaces');
-  if ($namespace is nonnull) {
-    $codegen_file->setNamespace($namespace);
-  }
-  $codegen_file->addTrait(
-    $fac->codegenTrait('GlobalHTMLAttributes')
-      ->setDocBlock('@deprecated Will be removed in the next breaking release.')
-      ->addXhpAttributes(codegen_attributes(
-        $fac,
-        \file_get_contents($globals)
-          |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
-          |> TypeAssert\matches<dict<string, AttributeDefinition>>($$),
-      )),
-  )
-    ->save();
 }
