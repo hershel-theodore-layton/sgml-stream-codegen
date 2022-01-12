@@ -38,6 +38,11 @@ function codegen_tag(
         ->setProtected()
         ->setType('string')
         ->setValue($tag_name, HackBuilderValues::export()),
+    )
+    ->addConstant(
+      $fac->codegenClassConstant('TAG_NAME')
+        ->setType('string')
+        ->setValue($tag_name, HackBuilderValues::export()),
     );
 
   return $file->addClass($tag);
