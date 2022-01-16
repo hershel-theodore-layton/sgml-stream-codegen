@@ -33,12 +33,6 @@ function codegen_tag(
       Vec\map($def['traits'], $name ==> $fac->codegenUsesTrait($name)),
     )
     ->addXhpAttributes(codegen_attributes($fac, $def['attributes']))
-    ->addProperty(
-      $fac->codegenProperty('tagName')
-        ->setProtected()
-        ->setType('string')
-        ->setValue($tag_name, HackBuilderValues::export()),
-    )
     ->addConstant(
       $fac->codegenClassConstant('TAG_NAME')
         ->setType('string')
