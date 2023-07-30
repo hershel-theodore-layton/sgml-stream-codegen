@@ -649,7 +649,6 @@
       }
     },
     "base_class": "HTMLElementBase",
-    "comment": "Quoting the HTML spec:\n```\nAny other attribute that has no namespace (see prose).\n```\nAll attributes that do not contain a `:` are valid on this element and its type is always mixed. If the typechecker rejects your HTML, edit the definition of this tag, since it is always spec compliant to add more non-namespaced attributes.",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-embed-element",
     "traits": [

@@ -10,7 +10,6 @@ function cast_to_tag_defs(
       $partial__3 = $v__2 as shape(
         'attributes' => mixed,
         'base_class' => string,
-        ?'comment' => string,
         'interfaces' => mixed,
         'traits' => mixed,
         'see' => string,

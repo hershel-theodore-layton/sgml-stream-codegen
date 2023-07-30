@@ -10,9 +10,8 @@ function codegen_tag(
 ): void {
   $file->append(
     Str\format(
-      "/**\n * @see %s\n%s */\nfinal xhp class %s extends %s",
+      "/**\n * @see %s\n */\nfinal xhp class %s extends %s",
       $def['see'],
-      Shapes::keyExists($def, 'comment') ? ' * '.$def['comment']."\n" : '',
       $tag_name,
       $def['base_class'],
     ),
