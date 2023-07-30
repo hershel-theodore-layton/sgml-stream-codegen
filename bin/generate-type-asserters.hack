@@ -2,9 +2,10 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH\Lib\{File, Str};
-use function HTL\StaticTypeAssertionCodegen\from_type;
-use function HTL\StaticTypeAssertionCodegen\emit_body_for_assertion_function;
-use type HTL\StaticTypeAssertionCodegen\OpaqueTypeDescription;
+use function HTL\StaticTypeAssertionCodegen\{
+  emit_body_for_assertion_function,
+  from_type,
+};
 
 <<__EntryPoint>>
 async function generate_type_asserters_async(): Awaitable<void> {
