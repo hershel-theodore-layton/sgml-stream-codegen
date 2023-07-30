@@ -6,7 +6,6 @@ use type Facebook\HackCodegen\{
   CodegenFileType,
   HackCodegenFactory,
 };
-use namespace Facebook\TypeAssert;
 use namespace HH\Lib\{C, Str};
 
 const int TAGS_DEFINITION_FILE = 1;
@@ -20,9 +19,7 @@ async function generate_async(): Awaitable<void> {
   require_once __DIR__.'/../vendor/autoload.hack';
   \Facebook\AutoloadMap\initialize();
 
-  $argv = \HH\global_get('argv')
-    |> TypeAssert\matches<Container<string>>($$)
-    |> vec($$);
+  $argv = \HH\global_get('argv') |> cast_to_vec_of_string($$);
 
   if (C\count($argv) !== 6) {
     \fprintf(
@@ -78,7 +75,7 @@ async function generate_async(): Awaitable<void> {
   $fac = new HackCodegenFactory($config);
   $tags = \file_get_contents($tags_definition_file)
     |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
-    |> TypeAssert\matches<dict<string, TagDefinition>>($$);
+    |> cast_to_tag_defs($$);
 
   foreach ($tags as $name => $tag) {
     $path = $build_dir.'/tags/'.$name[0].'/';
@@ -115,7 +112,7 @@ async function generate_async(): Awaitable<void> {
         $fac,
         \file_get_contents($globals)
           |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
-          |> TypeAssert\matches<dict<string, AttributeDefinition>>($$),
+          |> cast_to_attr_defs($$),
       )),
   )
     ->save();
