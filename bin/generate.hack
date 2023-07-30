@@ -1,12 +1,7 @@
 /** sgml-stream-codegen is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamCodegen;
 
-use type Facebook\HackCodegen\{
-  CodegenFile,
-  CodegenFileType,
-  HackCodegenFactory,
-};
-use namespace HH\Lib\{C, Str};
+use namespace HH\Lib\{C, Str, Vec};
 
 const int TAGS_DEFINITION_FILE = 1;
 const int GLOBAL_ATTRIBUTES_DEFINITION_FILE = 2;
@@ -62,58 +57,69 @@ async function generate_async(): Awaitable<void> {
     $globals,
   );
 
-  $config = new HackCodegenConfig(
-    shape(
-      'file_header' => vec[$license_header],
-      // This mostly affects comments with an `@see` to the whatwg.
-      // These links are sometimes just long enough to not fit after
-      // the `@see` on a single 80 char line.
-      // Actual code will remain below 80 chars most likely.
-      'max_line_length' => 90,
-    ),
-  );
-  $fac = new HackCodegenFactory($config);
+  $new_file = ($path) ==> {
+    $codegen_file = new CodegenFile($path);
+    $codegen_file->append('// '.$license_header);
+    $codegen_file->append(
+      "/**\n * This file is generated. Do not modify it manually!\n */",
+    );
+    return $codegen_file;
+  };
+
   $tags = \file_get_contents($tags_definition_file)
     |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
     |> cast_to_tag_defs($$);
 
-  foreach ($tags as $name => $tag) {
+  $files = Vec\map_with_key($tags, ($name, $tag) ==> {
     $path = $build_dir.'/tags/'.$name[0].'/';
     if (!\is_dir($path)) {
       \mkdir($path, 0777, true);
     }
     $uses_interfaces = Str\contains(\json_encode($tag), 'SGMLStreamInterfaces');
 
-    $codegen_file = (new CodegenFile($config, $path.$name.'.hack'))
-      ->setFileType(CodegenFileType::DOT_HACK)
-      ->useNamespace(
-        $uses_interfaces
-          ? 'HTL\\{SGMLStream, SGMLStreamInterfaces}'
-          : 'HTL\\SGMLStream',
-      );
+    $codegen_file = $new_file($path.$name.'.hack');
+
     if ($namespace is nonnull) {
-      $codegen_file->setNamespace($namespace);
+      $codegen_file->append('namespace '.$namespace.';');
     }
-    codegen_tag($codegen_file, $fac, $tag, $name)->save();
+
+    $codegen_file->append(
+      $uses_interfaces
+        ? 'use namespace HTL\\{SGMLStream, SGMLStreamInterfaces};'
+        : 'use namespace HTL\\SGMLStream;',
+    );
+
+    $codegen_file->newline();
+
+    codegen_tag($codegen_file, $tag, $name);
+    return $codegen_file;
+  });
+
+  $codegen_file = $new_file($build_dir.'/HTMLElementBase.hack');
+
+  if ($namespace is nonnull) {
+    $codegen_file->append('namespace '.$namespace.';');
   }
 
-  $codegen_file = (new CodegenFile($config, $build_dir.'/HTMLElementBase.hack'))
-    ->setFileType(CodegenFileType::DOT_HACK)
-    ->useNamespace('HTL\\{SGMLStream, SGMLStreamInterfaces}');
-  if ($namespace is nonnull) {
-    $codegen_file->setNamespace($namespace);
-  }
-  $codegen_file->addClass(
-    $fac->codegenClass('HTMLElementBase')
-      ->setIsAbstract()
-      ->setIsXHP()
-      ->setExtends('SGMLStream\\RootElement')
-      ->addXhpAttributes(codegen_attributes(
-        $fac,
-        \file_get_contents($globals)
-          |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
-          |> cast_to_attr_defs($$),
-      )),
-  )
-    ->save();
+  $codegen_file->append(
+    'use namespace HTL\\{SGMLStream, SGMLStreamInterfaces};',
+  );
+
+  $codegen_file->newline();
+
+  $codegen_file->append(
+    "abstract xhp class HTMLElementBase extends SGMLStream\\RootElement {\n",
+  );
+
+  $codegen_file->append(codegen_attributes(
+    \file_get_contents($globals)
+      |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
+      |> cast_to_attr_defs($$),
+  ));
+
+  $codegen_file->append('}');
+
+  $files[] = $codegen_file;
+
+  await Vec\map_async($files, async $f ==> await $f->writeToDiskAsync());
 }
