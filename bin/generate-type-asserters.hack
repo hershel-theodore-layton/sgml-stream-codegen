@@ -27,7 +27,7 @@ async function write_file_async<reify T>(
   string $file_name,
   string $type_name,
 ): Awaitable<void> {
-  $code = emit_body_for_assertion_function(from_type<T>(dict[], $err ==> {
+  $code = emit_body_for_assertion_function(from_type<T>(dict[], ($err)[] ==> {
     throw new \RuntimeException($err);
   }));
 

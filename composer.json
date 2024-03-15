@@ -7,7 +7,7 @@
   },
   "require-dev": {
     "hhvm/hhvm-autoload": "^3.2",
-    "hershel-theodore-layton/static-type-assertion-code-generator": "^0.3",
+    "hershel-theodore-layton/static-type-assertion-code-generator": "^1",
     "hhvm/hhast": "^4.102",
     "hhvm/hacktest": "^2.3",
     "facebook/fbexpect": "^2.8"
