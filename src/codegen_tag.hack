@@ -8,9 +8,12 @@ function codegen_tag(
   TagDefinition $def,
   string $tag_name,
 ): void {
+  // If I emit `xhp class`, the file can not format.
+  // If I emit `class var` (var is an element name),
+  // the file fails to parse.
   $file->append(
     Str\format(
-      "/**\n * @see %s\n */\nfinal xhp class %s extends %s",
+      "/**\n * @see %s\n */\nfinal class _MANGLED_%s extends %s",
       $def['see'],
       $tag_name,
       $def['base_class'],
