@@ -59,7 +59,7 @@ async function generate_async(): Awaitable<void> {
 
   $new_file = ($path) ==> {
     $codegen_file = new CodegenFile($path);
-    $codegen_file->append('// '.$license_header);
+    $codegen_file->append('/** '.$license_header.' */ ');
     $codegen_file->append(
       "/**\n * This file is generated. Do not modify it manually!\n */",
     );
