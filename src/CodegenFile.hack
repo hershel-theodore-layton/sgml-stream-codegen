@@ -45,7 +45,7 @@ final class CodegenFile {
     using $file->closeWhenDisposed();
     using $file->tryLockx(File\LockType::EXCLUSIVE);
     $code = await $file->readAllAsync();
-    $file->truncate(0);
+    ftruncate($file, 0);
     $file->seek(0);
     await $file->writeAllAsync(
       Str\replace($code, 'class _MANGLED_', 'xhp class '),
