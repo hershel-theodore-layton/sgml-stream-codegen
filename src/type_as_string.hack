@@ -2,7 +2,7 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH\Lib\{Str, Vec};
-function type_as_string(AttributeDefinition $def): string {
+function type_as_string(AttributeDefinition $def)[defaults]: string {
   if ($def['type'] !== 'enum') {
     return $def['type'];
   }

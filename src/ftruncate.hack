@@ -8,7 +8,7 @@ use namespace HH\Lib\File;
  * Reimplement this based on the PHP apis of your.
  * @see https://github.com/hershel-theodore-layton/portable-hack-ast/blob/7453f1d6b9ae902994a84dab69762fd737abcb8a/bin/gen/ftruncate.hack
  */
-function ftruncate(File\Handle $file, int $size): void {
+function ftruncate(File\Handle $file, int $size)[defaults]: void {
   // Even more legacy baggage.
   // $file->getPath() used to return a path object.
   // This gets the string path on any version of hhvm.

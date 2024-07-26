@@ -10,7 +10,7 @@ const int NAMESPACE_NAME = 4;
 const int LICENSE_HEADER = 5;
 
 <<__EntryPoint>>
-async function generate_async(): Awaitable<void> {
+async function generate_async()[defaults]: Awaitable<void> {
   require_once __DIR__.'/../vendor/autoload.hack';
   \Facebook\AutoloadMap\initialize();
 
@@ -57,7 +57,7 @@ async function generate_async(): Awaitable<void> {
     $globals,
   );
 
-  $new_file = ($path) ==> {
+  $new_file = $path ==> {
     $codegen_file = new CodegenFile($path);
     $codegen_file->append('/** '.$license_header.' */ ');
     $codegen_file->append(

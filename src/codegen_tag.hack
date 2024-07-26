@@ -7,7 +7,7 @@ function codegen_tag(
   CodegenFile $file,
   TagDefinition $def,
   string $tag_name,
-): void {
+)[defaults]: void {
   // If I emit `xhp class`, the file can not format.
   // If I emit `class var` (var is an element name),
   // the file fails to parse.

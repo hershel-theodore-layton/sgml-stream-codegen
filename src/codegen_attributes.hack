@@ -5,7 +5,7 @@ use namespace HH\Lib\{C, Str, Vec};
 
 function codegen_attributes(
   dict<string, AttributeDefinition> $attributes,
-): string {
+)[defaults]: string {
   if (C\is_empty($attributes)) {
     return '';
   }

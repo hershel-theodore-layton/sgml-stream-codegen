@@ -26,12 +26,13 @@ final class CodegenFile {
     return $this->buffer;
   }
 
-  public async function writeToDiskAsync(): Awaitable<void> {
+  public async function writeToDiskAsync()[defaults]: Awaitable<void> {
     await $this->writeToDiskFormattedAsync();
     await $this->addXhpClassModifierAndDemangleAsync();
   }
 
-  private async function writeToDiskFormattedAsync(): Awaitable<void> {
+  private async function writeToDiskFormattedAsync(
+  )[defaults]: Awaitable<void> {
     $file = File\open_write_only($this->path, File\WriteMode::TRUNCATE);
     using $file->closeWhenDisposed();
     using $file->tryLockx(File\LockType::EXCLUSIVE);
@@ -40,7 +41,7 @@ final class CodegenFile {
   }
 
   private async function addXhpClassModifierAndDemangleAsync(
-  ): Awaitable<void> {
+  )[defaults]: Awaitable<void> {
     $file = File\open_read_write($this->path);
     using $file->closeWhenDisposed();
     using $file->tryLockx(File\LockType::EXCLUSIVE);
