@@ -7,4 +7,5 @@ type TagDefinition = shape(
   'interfaces' => vec<string>,
   'traits' => vec<string>,
   'see' => string,
+  ...
 );

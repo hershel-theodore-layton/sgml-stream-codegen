@@ -3,7 +3,7 @@ namespace HTL\SGMLStreamCodegen;
 
 function cast_to_tag_defs(
   mixed $htl_untyped_variable,
-)[]: dict<string, TagDefinition> {
+)[]: dict<string, \HTL\SGMLStreamCodegen\TagDefinition> {
   $out__1 = dict[];
   foreach (($htl_untyped_variable as dict<_, _>) as $k__1 => $v__1) {
     $out__3 = $v__1 as shape(
@@ -12,6 +12,7 @@ function cast_to_tag_defs(
       'interfaces' => mixed,
       'traits' => mixed,
       'see' => string,
+      ...
     );
     $out__4 = dict[];
     foreach (($out__3['attributes'] as dict<_, _>) as $k__4 => $v__4) {
@@ -20,6 +21,7 @@ function cast_to_tag_defs(
         'see' => string,
         'type' => string,
         ?'type_enum_values' => mixed,
+        ...
       );
       if (Shapes::keyExists($out__6, 'type_enum_values')) {
         $out__10 = vec[];

@@ -6,4 +6,5 @@ type AttributeDefinition = shape(
   'see' => string,
   'type' => string,
   ?'type_enum_values' => vec<string>,
+  ...
 );
