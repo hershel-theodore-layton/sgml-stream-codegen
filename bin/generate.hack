@@ -1,6 +1,7 @@
 /** sgml-stream-codegen is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamCodegen;
 
+use namespace HH;
 use namespace HH\Lib\{C, Str, Vec};
 
 const int TAGS_DEFINITION_FILE = 1;
@@ -11,8 +12,11 @@ const int LICENSE_HEADER = 5;
 
 <<__EntryPoint>>
 async function generate_async()[defaults]: Awaitable<void> {
-  require_once __DIR__.'/../vendor/autoload.hack';
-  \Facebook\AutoloadMap\initialize();
+  $autoloader = __DIR__.'/../vendor/autoload.hack';
+  if (HH\could_include($autoloader)) {
+    require_once $autoloader;
+    HH\dynamic_fun('Facebook\AutoloadMap\initialize')();
+  }
 
   $argv = \HH\global_get('argv') |> cast_to_vec_of_string($$);
 

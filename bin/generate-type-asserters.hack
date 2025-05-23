@@ -1,6 +1,7 @@
 /** sgml-stream-codegen is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamCodegen;
 
+use namespace HH;
 use namespace HH\Lib\{File, Str};
 use namespace HTL\TypeVisitor;
 use function HTL\StaticTypeAssertionCodegen\{
@@ -10,8 +11,11 @@ use function HTL\StaticTypeAssertionCodegen\{
 
 <<__EntryPoint>>
 async function generate_type_asserters_async()[defaults]: Awaitable<void> {
-  require_once __DIR__.'/../vendor/autoload.hack';
-  \Facebook\AutoloadMap\initialize();
+  $autoloader = __DIR__.'/../vendor/autoload.hack';
+  if (HH\could_include($autoloader)) {
+    require_once $autoloader;
+    HH\dynamic_fun('Facebook\AutoloadMap\initialize')();
+  }
 
   await write_file_async<dict<string, AttributeDefinition>>(
     'cast_to_attr_defs',
