@@ -21,8 +21,7 @@ async function generate_async()[defaults]: Awaitable<void> {
   $argv = \HH\global_get('argv') |> cast_to_vec_of_string($$);
 
   if (C\count($argv) !== 6) {
-    \fprintf(
-      \STDERR,
+    echo Str\format(
       'Usage: hhvm %s %s %s %s %s %s ',
       $argv[0],
       '<tags-definitions-file> ',
