@@ -3,7 +3,8 @@
   "description": "Build your own custom native sgml-stream tags from a json definition.",
   "license": "MIT",
   "require": {
-    "hhvm": "^4.102"
+    "hhvm": ">=4.102",
+    "hershel-theodore-layton/hhvm-four-shim": "<1"
   },
   "require-dev": {
     "hershel-theodore-layton/static-type-assertion-code-generator": "^1",
