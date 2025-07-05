@@ -317,8 +317,16 @@
         "see": "https://html.spec.whatwg.org/multipage/#handler-window-onpagehide",
         "type": "string"
       },
+      "onpagereveal": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagereveal",
+        "type": "string"
+      },
       "onpageshow": {
         "see": "https://html.spec.whatwg.org/multipage/#handler-window-onpageshow",
+        "type": "string"
+      },
+      "onpageswap": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageswap",
         "type": "string"
       },
       "onpopstate": {
@@ -360,6 +368,16 @@
   },
   "button": {
     "attributes": {
+      "command": {
+        "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
+        "help": "Valid options include: toggle-popover, show-popover, hide-popover, close, request-close, show-modal, and a custom command keyword of your choosing",
+        "type": "string"
+      },
+      "commandfor": {
+        "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor",
+        "help": "A valid id of the element on which to perform the command",
+        "type": "string"
+      },
       "disabled": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fe-disabled",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
@@ -405,6 +423,20 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-fe-name",
         "help": "Any name except for the empty string and isindex.",
         "type": "string"
+      },
+      "popovertarget": {
+        "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
+        "help": "A valid id of the popovertarget",
+        "type": "string"
+      },
+      "popovertargetaction": {
+        "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
+        "type": "enum",
+        "type_enum_values": [
+          "toggle",
+          "show",
+          "hide"
+        ]
       },
       "type": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-button-type",
@@ -556,6 +588,11 @@
   },
   "details": {
     "attributes": {
+      "name": {
+        "see": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name",
+        "help": "Name of group of mutually-exclusive details elements",
+        "type": "string"
+      },
       "open": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-details-open",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
@@ -579,6 +616,15 @@
   },
   "dialog": {
     "attributes": {
+      "closedby": {
+        "see": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby",
+        "type": "enum",
+        "type_enum_values": [
+          "any",
+          "closerequest",
+          "none"
+        ]
+      },
       "open": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-dialog-open",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
@@ -894,6 +940,14 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
         "type": "int"
       },
+      "loading": {
+        "see": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading",
+        "type": "enum",
+        "type_enum_values": [
+          "lazy",
+          "eager"
+        ]
+      },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-name",
         "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
@@ -962,6 +1016,16 @@
         "type_enum_values": [
           "sync",
           "async",
+          "auto"
+        ]
+      },
+      "fetchpriority": {
+        "see": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority",
+        "help": "A modern way to increase (or decrease) the priority with which the browser fetches a resource. See https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fetch-priority-attribute",
+        "type": "enum",
+        "type_enum_values": [
+          "high",
+          "low",
           "auto"
         ]
       },
@@ -1035,6 +1099,11 @@
         "help": "A comma separated list of \"audio/*\", \"video/*\", \"image/*\", a valid MIME type string with no parameters, file extensions starting with a \".\".",
         "type": "string"
       },
+      "alpha": {
+        "see": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alpha",
+        "help": "If present, it indicates the CSS color's alpha component can be manipulated by the end user and does not have to be fully opaque.",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
       "alt": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-alt",
         "help": "Any text which is an adequate replacement for the missing image.",
@@ -1048,6 +1117,14 @@
       "checked": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-checked",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "colorspace": {
+        "see": "https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace",
+        "type": "enum",
+        "type_enum_values": [
+          "limited-srgb",
+          "display-p3"
+        ]
       },
       "dirname": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
@@ -1140,6 +1217,20 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-placeholder",
         "help": "A string without a linefeed (\\n) or carriage return (\\r).",
         "type": "string"
+      },
+      "popovertarget": {
+        "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
+        "help": "A valid id of the popovertarget",
+        "type": "string"
+      },
+      "popovertargetaction": {
+        "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction",
+        "type": "enum",
+        "type_enum_values": [
+          "toggle",
+          "show",
+          "hide"
+        ]
       },
       "readonly": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-readonly",
@@ -1282,9 +1373,17 @@
         "help": "Common values are: \"script\" and \"style\". See https://fetch.spec.whatwg.org/#concept-request-destination for more information.",
         "type": "string"
       },
+      "blocking": {
+        "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking",
+        "help": "Not very useful at this time. It is not possible to use this attribute to make something that was render-blocking not render-blocking.",
+        "type": "enum",
+        "type_enum_values": [
+          "render"
+        ]
+      },
       "color": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-color",
-        "help": "I CSS color value.",
+        "help": "A CSS color value.",
         "type": "string"
       },
       "crossorigin": {
@@ -1298,6 +1397,16 @@
       "disabled": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-disabled",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "fetchpriority": {
+        "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority",
+        "help": "A modern way to increase (or decrease) the priority with which the browser fetches a resource. See https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fetch-priority-attribute",
+        "type": "enum",
+        "type_enum_values": [
+          "high",
+          "low",
+          "auto"
+        ]
       },
       "href": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-href",
@@ -1432,6 +1541,11 @@
           "content-security-policy"
         ]
       },
+      "media": {
+        "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media",
+        "help": "Unless the name is theme-color, the media attribute has no effect on the processing model and must not be used by authors.",
+        "type": "string"
+      },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-meta-name",
         "help": "Any name.",
@@ -1516,6 +1630,11 @@
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-object-name",
         "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type",
+        "help": "A MIME type string.",
         "type": "string"
       },
       "usemap": {
@@ -1767,6 +1886,14 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-async",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
+      "blocking": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking",
+        "help": "Not very useful at this time. It is not possible to use this attribute to make an inline script not render-blocking.",
+        "type": "enum",
+        "type_enum_values": [
+          "render"
+        ]
+      },
       "crossorigin": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-crossorigin",
         "type": "enum",
@@ -1778,6 +1905,16 @@
       "defer": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-defer",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "fetchpriority": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority",
+        "help": "A modern way to increase (or decrease) the priority with which the browser fetches a resource. See https://html.spec.whatwg.org/multipage/urls-and-fetching.html#fetch-priority-attribute",
+        "type": "enum",
+        "type_enum_values": [
+          "high",
+          "low",
+          "auto"
+        ]
       },
       "integrity": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-integrity",
@@ -1897,6 +2034,10 @@
   },
   "source": {
     "attributes": {
+      "height": {
+        "see": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "type": "int"
+      },
       "media": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-source-media",
         "help": "A valid media query list. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list for more information.",
@@ -1921,6 +2062,10 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-source-type",
         "help": "A MIME type string.",
         "type": "string"
+      },
+      "width": {
+        "see": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "type": "int"
       }
     },
     "base_class": "HTMLElementBase",
@@ -1939,6 +2084,15 @@
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
+  "search": {
+    "attributes": {},
+    "base_class": "HTMLElementBase",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-search-element",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
   "strong": {
     "attributes": {},
     "base_class": "HTMLElementBase",
@@ -1950,6 +2104,14 @@
   },
   "style": {
     "attributes": {
+      "blocking": {
+        "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking",
+        "help": "Not very useful at this time. It is not possible to use this attribute to make an inline stylesheet not render-blocking.",
+        "type": "enum",
+        "type_enum_values": [
+          "render"
+        ]
+      },
       "media": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-style-media",
         "help": "A valid media query list. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list for more information.",
@@ -2032,7 +2194,32 @@
     ]
   },
   "template": {
-    "attributes": {},
+    "attributes": {
+      "shadowrootmode": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode",
+        "type": "enum",
+        "type_enum_values": [
+          "open",
+          "closed"
+        ]
+      },
+      "shadowrootdelegatesfocus": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "shadowrootclonable": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "shadowrootserializable": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "shadowrootcustomelementregistry": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      }
+    },
     "base_class": "HTMLElementBase",
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-template-element",

@@ -16,6 +16,15 @@
       "characters"
     ]
   },
+  "autocorrect": {
+    "see": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect",
+    "type": "enum",
+    "type_enum_values": [
+      "",
+      "on",
+      "off"
+    ]
+  },
   "autofocus": {
     "see": "https://html.spec.whatwg.org/multipage/#attr-fe-autofocus",
     "type": "SGMLStreamInterfaces\\BooleanAttribute"
@@ -74,6 +83,10 @@
     "help": "A unique value amount all id attributes of the HTML elements in your document. At least one character in length and without ascii whitespace.",
     "type": "string"
   },
+  "inert": {
+    "see": "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute",
+    "type": "SGMLStreamInterfaces\\BooleanAttribute"
+  },
   "inputmode": {
     "see": "https://html.spec.whatwg.org/multipage/#attr-inputmode",
     "type": "enum",
@@ -127,12 +140,34 @@
     "help": "Any text is allowed.",
     "type": "string"
   },
+  "popover": {
+    "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover",
+    "type": "enum",
+    "type_enum_values": [
+      "",
+      "auto",
+      "manual",
+      "hint"
+    ]
+  },
   "onabort": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onabort",
     "type": "string"
   },
   "onauxclick": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onauxclick",
+    "type": "string"
+  },
+  "onbeforeinput": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onbeforeinput",
+    "type": "string"
+  },
+  "onbeforematch": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onbeforematch",
+    "type": "string"
+  },
+  "onbeforetoggle": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onbeforetoggle",
     "type": "string"
   },
   "onblur": {
@@ -163,8 +198,20 @@
     "see": "https://html.spec.whatwg.org/multipage/#handler-onclose",
     "type": "string"
   },
+  "oncommand": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncommand",
+    "type": "string"
+  },
+  "oncontextlost": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextlost",
+    "type": "string"
+  },
   "oncontextmenu": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-oncontextmenu",
+    "type": "string"
+  },
+  "oncontextrestored": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextlost",
     "type": "string"
   },
   "oncopy": {
@@ -335,6 +382,10 @@
     "see": "https://html.spec.whatwg.org/multipage/#handler-onscroll",
     "type": "string"
   },
+  "onscrollend": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onscrollend",
+    "type": "string"
+  },
   "onsecuritypolicyviolation": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onsecuritypolicyviolation",
     "type": "string"
@@ -425,6 +476,15 @@
     "type_enum_values": [
       "yes",
       "no"
+    ]
+  },
+  "writingsuggestions": {
+    "see": "https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions",
+    "type": "enum",
+    "type_enum_values": [
+      "",
+      "true",
+      "false"
     ]
   }
 }
