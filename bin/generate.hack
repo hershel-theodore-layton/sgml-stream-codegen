@@ -69,7 +69,7 @@ async function generate_async()[defaults]: Awaitable<void> {
     return $codegen_file;
   };
 
-  $tags = \file_get_contents($tags_definition_file)
+  $tags = \file_get_contents($tags_definition_file) as string
     |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
     |> cast_to_tag_defs($$);
 
@@ -78,7 +78,8 @@ async function generate_async()[defaults]: Awaitable<void> {
     if (!\is_dir($path)) {
       \mkdir($path, 0777, true);
     }
-    $uses_interfaces = Str\contains(\json_encode($tag), 'SGMLStreamInterfaces');
+    $uses_interfaces =
+      Str\contains(\json_encode($tag) as string, 'SGMLStreamInterfaces');
 
     $codegen_file = $new_file($path.$name.'.hack');
 
@@ -116,7 +117,7 @@ async function generate_async()[defaults]: Awaitable<void> {
   );
 
   $codegen_file->append(codegen_attributes(
-    \file_get_contents($globals)
+    \file_get_contents($globals) as string
       |> \json_decode($$, true, 512, \JSON_FB_HACK_ARRAYS)
       |> cast_to_attr_defs($$),
   ));

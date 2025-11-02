@@ -34,7 +34,10 @@ function codegen_tag(
   $file->newline();
 
   $file->append(
-    Str\format('const string TAG_NAME = %s;', \var_export($tag_name, true)),
+    Str\format(
+      'const string TAG_NAME = %s;',
+      \var_export($tag_name, true) as string,
+    ),
   );
 
   $file->append(codegen_attributes($def['attributes']));
