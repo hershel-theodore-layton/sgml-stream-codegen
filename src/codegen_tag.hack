@@ -8,7 +8,7 @@ function codegen_tag(
   TagDefinition $def,
   string $tag_name,
 )[defaults]: void {
-  // If I emit `xhp class`, the file can not format.
+  // If I emit `xhp class`, the file cannot be formatted.
   // If I emit `class var` (var is an element name),
   // the file fails to parse.
   $file->append(

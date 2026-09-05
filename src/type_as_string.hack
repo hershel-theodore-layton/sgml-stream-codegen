@@ -15,7 +15,7 @@ function type_as_string(AttributeDefinition $def)[defaults]: string {
     return 'enum {'.$one_line.'}';
   }
 
-  // This ends up creating a multi line `enum {`.
+  // This ends up creating a multiline `enum {`.
   return \var_export_pure($values) as string
     |> Str\replace_every($$, dict['vec [' => 'enum {', ']' => '}']);
 }

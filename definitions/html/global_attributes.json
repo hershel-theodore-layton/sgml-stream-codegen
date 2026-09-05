@@ -80,7 +80,7 @@
   },
   "id": {
     "see": "https://html.spec.whatwg.org/multipage/#the-id-attribute",
-    "help": "A unique value amount all id attributes of the HTML elements in your document. At least one character in length and without ascii whitespace.",
+    "help": "A unique value among all ID attributes of the HTML elements in your document. At least one character long and without ASCII whitespace.",
     "type": "string"
   },
   "inert": {
@@ -118,7 +118,7 @@
   },
   "itemref": {
     "see": "https://html.spec.whatwg.org/multipage/#attr-itemref",
-    "help": "A set of unique space-separated tokens referring to HTML element ids in the current document.",
+    "help": "A set of unique space-separated tokens referring to HTML element IDs in the current document.",
     "type": "string"
   },
   "itemscope": {

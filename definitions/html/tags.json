@@ -18,7 +18,7 @@
       },
       "ping": {
         "see": "https://html.spec.whatwg.org/multipage/#ping",
-        "help": "A space-separated list of http(s) urls.",
+        "help": "A space-separated list of HTTP or HTTPS URLs.",
         "type": "string"
       },
       "referrerpolicy": {
@@ -38,12 +38,12 @@
       },
       "rel": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-rel",
-        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "help": "A space-separated list of keywords. For example, \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
         "type": "string"
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       },
       "type": {
@@ -86,7 +86,7 @@
       },
       "coords": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-area-coords",
-        "help": "A list of comma separated floating point numbers.",
+        "help": "A list of comma-separated floating-point numbers.",
         "type": "string"
       },
       "download": {
@@ -101,7 +101,7 @@
       },
       "ping": {
         "see": "https://html.spec.whatwg.org/multipage/#ping",
-        "help": "A space-separated list of http(s) urls.",
+        "help": "A space-separated list of HTTP or HTTPS URLs.",
         "type": "string"
       },
       "referrerpolicy": {
@@ -121,7 +121,7 @@
       },
       "rel": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-rel",
-        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "help": "A space-separated list of keywords. For example, \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
         "type": "string"
       },
       "shape": {
@@ -136,7 +136,7 @@
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       }
     },
@@ -231,7 +231,7 @@
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-base-target",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       }
     },
@@ -370,12 +370,12 @@
     "attributes": {
       "command": {
         "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
-        "help": "Valid options include: toggle-popover, show-popover, hide-popover, close, request-close, show-modal, and a custom command keyword of your choosing",
+        "help": "Valid options include: toggle-popover, show-popover, hide-popover, close, request-close, show-modal, and a custom command keyword of your choosing.",
         "type": "string"
       },
       "commandfor": {
         "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor",
-        "help": "A valid id of the element on which to perform the command",
+        "help": "A valid ID of the element on which to perform the command.",
         "type": "string"
       },
       "disabled": {
@@ -384,7 +384,7 @@
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "formaction": {
@@ -416,7 +416,7 @@
       },
       "formtarget": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formtarget",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       },
       "name": {
@@ -426,7 +426,7 @@
       },
       "popovertarget": {
         "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
-        "help": "A valid id of the popovertarget",
+        "help": "A valid ID of the popovertarget.",
         "type": "string"
       },
       "popovertargetaction": {
@@ -590,7 +590,7 @@
     "attributes": {
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-name",
-        "help": "Name of group of mutually-exclusive details elements",
+        "help": "Name of a group of mutually exclusive details elements.",
         "type": "string"
       },
       "open": {
@@ -709,7 +709,7 @@
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "name": {
@@ -756,7 +756,7 @@
     "attributes": {
       "accept-charset": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-form-accept-charset",
-        "help": "The only valid value is a case insensitive \"utf-8\".",
+        "help": "The only valid value is a case-insensitive \"utf-8\".",
         "type": "string"
       },
       "action": {
@@ -801,12 +801,12 @@
       },
       "rel": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-form-rel",
-        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "help": "A space-separated list of keywords. For example, \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
         "type": "string"
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fs-target",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       }
     },
@@ -950,7 +950,7 @@
       },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-name",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       },
       "referrerpolicy": {
@@ -980,7 +980,7 @@
       },
       "srcdoc": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-srcdoc",
-        "help": "Any number of comments and whitespace, optional doctype, any number of comments and whitespace, an html document, any number of comments and whitespace.",
+        "help": "Any number of comments and whitespace, optional doctype, any number of comments and whitespace, an HTML document, any number of comments and whitespace.",
         "type": "string"
       },
       "width": {
@@ -1096,7 +1096,7 @@
     "attributes": {
       "accept": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-accept",
-        "help": "A comma separated list of \"audio/*\", \"video/*\", \"image/*\", a valid MIME type string with no parameters, file extensions starting with a \".\".",
+        "help": "A comma-separated list of \"audio/*\", \"video/*\", \"image/*\", a valid MIME type string with no parameters, file extensions starting with a \".\".",
         "type": "string"
       },
       "alpha": {
@@ -1128,7 +1128,7 @@
       },
       "dirname": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
-        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the urlencoded parameters sent to the server.",
+        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the URL-encoded parameters sent to the server.",
         "type": "string"
       },
       "disabled": {
@@ -1137,7 +1137,7 @@
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "formaction": {
@@ -1169,7 +1169,7 @@
       },
       "formtarget": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formtarget",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       },
       "height": {
@@ -1178,7 +1178,7 @@
       },
       "list": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-list",
-        "help": "The id of a datalist element.",
+        "help": "The ID of a datalist element.",
         "type": "string"
       },
       "max": {
@@ -1220,7 +1220,7 @@
       },
       "popovertarget": {
         "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popovertarget",
-        "help": "A valid id of the popovertarget",
+        "help": "A valid ID of the popovertarget.",
         "type": "string"
       },
       "popovertargetaction": {
@@ -1332,7 +1332,7 @@
     "attributes": {
       "for": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-label-for",
-        "help": "The id of a labelable element.",
+        "help": "The ID of a labelable element.",
         "type": "string"
       }
     },
@@ -1430,7 +1430,7 @@
       },
       "integrity": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-integrity",
-        "help": "Commonly a hash algorithm a \"-\" and a base64 encoded value of the hash. See https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute for more information.",
+        "help": "A hash algorithm followed by a hyphen and a base64-encoded value of the hash. See https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute for more information.",
         "type": "string"
       },
       "media": {
@@ -1455,12 +1455,12 @@
       },
       "rel": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-rel",
-        "help": "A space separated list of keywords. F.e. \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
+        "help": "A space-separated list of keywords. For example, \"next\" or \"license\". See https://html.spec.whatwg.org/multipage/links.html#linkTypes for more information.",
         "type": "string"
       },
       "sizes": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-sizes",
-        "help": "Either the string \"any\" or two pixel values, separated by an \"x\"",
+        "help": "Either the string \"any\" or two pixel values, separated by an \"x\".",
         "type": "string"
       },
       "type": {
@@ -1522,7 +1522,7 @@
     "attributes": {
       "charset": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-meta-charset",
-        "help": "The only valid value is a case insensitive \"utf-8\".",
+        "help": "The only valid value is a case-insensitive \"utf-8\".",
         "type": "string"
       },
       "content": {
@@ -1624,12 +1624,12 @@
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-object-name",
-        "help": "A valid browsing context name, for example, \"__blank\", \"__self\" or \"__parent\". For more see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
         "type": "string"
       },
       "type": {
@@ -1710,7 +1710,7 @@
       },
       "label": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-option-label",
-        "help": "Any non empty string.",
+        "help": "Any non-empty string.",
         "type": "string"
       },
       "selected": {
@@ -1734,12 +1734,12 @@
     "attributes": {
       "for": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-output-for",
-        "help": "A set of unique space-separated tokens. Each of which is an id of an element in the same document.",
+        "help": "A set of unique space-separated tokens, each of which is an ID of an element in the same document.",
         "type": "string"
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "name": {
@@ -1918,7 +1918,7 @@
       },
       "integrity": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-integrity",
-        "help": "Commonly a hash algorithm a \"-\" and a base64 encoded value of the hash. See https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute for more information.",
+        "help": "Commonly a hash algorithm, a \"-\", and a base64-encoded value of the hash. See https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute for more information.",
         "type": "string"
       },
       "nomodule": {
@@ -1947,7 +1947,7 @@
       },
       "type": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-type",
-        "help": "An empty string or a javascript MIME type for non module javascript. \"module\" for module javascript. Any other value makes this script tag a data block.",
+        "help": "An empty string or a JavaScript MIME type for non-module JavaScript. \"module\" for module JavaScript. Any other value makes this script tag a data block.",
         "type": "string"
       }
     },
@@ -1980,7 +1980,7 @@
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "multiple": {
@@ -2178,7 +2178,7 @@
       },
       "headers": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-headers",
-        "help": "A set of unique space-separated tokens. Each of which is an id of a th element in the same table.",
+        "help": "A set of unique space-separated tokens, each of which is an ID of a th element in the same table.",
         "type": "string"
       },
       "rowspan": {
@@ -2240,7 +2240,7 @@
       },
       "dirname": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
-        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the urlencoded parameters sent to the server.",
+        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the URL-encoded parameters sent to the server.",
         "type": "string"
       },
       "disabled": {
@@ -2249,7 +2249,7 @@
       },
       "form": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fae-form",
-        "help": "A valid id of a form element in the same tree.",
+        "help": "A valid ID of a form element in the same tree.",
         "type": "string"
       },
       "maxlength": {
@@ -2267,7 +2267,7 @@
       },
       "placeholder": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-textarea-placeholder",
-        "help": "Any string is allowed. Line feeds and carriage represent are line breaks.",
+        "help": "Any string is allowed. Line feeds and carriage returns are line breaks.",
         "type": "string"
       },
       "readonly": {
@@ -2320,7 +2320,7 @@
       },
       "headers": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-tdth-headers",
-        "help": "A set of unique space-separated tokens. Each of which is an id of a th element in the same table.",
+        "help": "A set of unique space-separated tokens, each of which is an ID of a th element in the same table.",
         "type": "string"
       },
       "rowspan": {
@@ -2406,7 +2406,7 @@
       },
       "label": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-track-label",
-        "help": "Any non empty string.",
+        "help": "Any non-empty string.",
         "type": "string"
       },
       "src": {
