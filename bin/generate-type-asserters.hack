@@ -5,7 +5,7 @@ use namespace HH;
 use namespace HH\Lib\{File, Str};
 use namespace HTL\TypeVisitor;
 use type RuntimeException;
-use function escapeshellarg, exec, shell_exec;
+use function HTL\PhaLintersServer\hackfmt_and_sign_hack_source_do_not_use_async;
 use function HTL\StaticTypeAssertionCodegen\{
   emit_body_for_assertion_function,
   from_type,
@@ -35,14 +35,8 @@ async function write_file_async<reify T>(
 
   $type_name = TypeVisitor\visit<T, _, _>(new TypeVisitor\TypenameVisitor());
   $path = __DIR__.'/../src/'.$file_name.'.hack';
-  $file = File\open_write_only($path, File\WriteMode::TRUNCATE);
-  using (
-    $file->closeWhenDisposed(),
-    $file->tryLockx(File\LockType::EXCLUSIVE)
-  ) {
-
-    await $file->writeAllAsync(Str\format(
-      <<<'code'
+  $source = Str\format(
+    <<<'code'
 /** sgml-stream-codegen is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamCodegen;
 
@@ -55,26 +49,14 @@ function %s(mixed $htl_untyped_variable)[]: %s {
 }
 
 code
-      ,
-      $file_name,
-      $type_name,
-      $code,
-    ));
-
-  }
-
-  shell_exec('hackfmt -i '.escapeshellarg($path));
-  $output = vec[];
-  $status = 0;
-  exec(
-    escapeshellarg(
-      __DIR__.
-      '/../vendor/hershel-theodore-layton/portable-hack-ast-linters-server/bin/pha-sign-hack-source.sh',
-    ).
-    ' '.
-    escapeshellarg($path),
-    inout $output,
-    inout $status,
+    ,
+    $file_name,
+    $type_name,
+    $code,
   );
-  invariant($status === 0, 'Could not sign generated type asserter');
+  $signed = await hackfmt_and_sign_hack_source_do_not_use_async($source);
+  $file = File\open_write_only($path, File\WriteMode::TRUNCATE);
+  using $file->closeWhenDisposed();
+  using $file->tryLockx(File\LockType::EXCLUSIVE);
+  await $file->writeAllAsync($signed);
 }
