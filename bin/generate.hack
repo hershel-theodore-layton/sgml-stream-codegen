@@ -118,7 +118,7 @@ async function generate_async()[defaults]: Awaitable<void> {
   $codegen_file->newline();
 
   $codegen_file->append(
-    "abstract class _MANGLED_HTMLElementBase extends SGMLStream\\RootElement {\n".
+    "abstract xhp class HTMLElementBase extends SGMLStream\\RootElement {\n".
     "  const ctx INITIALIZATION_CTX = [];\n",
   );
 

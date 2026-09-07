@@ -28,8 +28,8 @@ final class CodegenFile {
   }
 
   public async function writeToDiskAsync()[defaults]: Awaitable<void> {
-    $code = Str\replace($this->toString(), 'class _MANGLED_', 'xhp class ');
-    $signed = await hackfmt_and_sign_hack_source_do_not_use_async($code);
+    $signed =
+      await hackfmt_and_sign_hack_source_do_not_use_async($this->toString());
     $file = File\open_write_only($this->path, File\WriteMode::TRUNCATE);
     using $file->closeWhenDisposed();
     using $file->tryLockx(File\LockType::EXCLUSIVE);
