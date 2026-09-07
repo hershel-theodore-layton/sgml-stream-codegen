@@ -1,6 +1,10 @@
 /** sgml-stream-codegen is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamCodegen;
 
+use type HTL\Pragma\Pragmas;
+
+<<file: Pragmas(vec['PhaLinters', 'digest:114dbdcca4106e02d9a9'])>>
+
 function cast_to_attr_defs(
   mixed $htl_untyped_variable,
 )[]: dict<string, \HTL\SGMLStreamCodegen\AttributeDefinition> {

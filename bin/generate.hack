@@ -93,6 +93,9 @@ async function generate_async()[defaults]: Awaitable<void> {
         : 'use namespace HTL\\SGMLStream;',
     );
 
+    $codegen_file->append(
+      "use type HTL\\Pragma\\Pragmas;\n\n<<file: Pragmas(vec['PhaLinters', 'digest:'])>>",
+    );
     $codegen_file->newline();
 
     codegen_tag($codegen_file, $tag, $name);
@@ -109,6 +112,9 @@ async function generate_async()[defaults]: Awaitable<void> {
     'use namespace HTL\\{SGMLStream, SGMLStreamInterfaces};',
   );
 
+  $codegen_file->append(
+    "use type HTL\\Pragma\\Pragmas;\n\n<<file: Pragmas(vec['PhaLinters', 'digest:'])>>",
+  );
   $codegen_file->newline();
 
   $codegen_file->append(

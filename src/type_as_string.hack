@@ -2,6 +2,8 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH\Lib\{Str, Vec};
+use function var_export_pure;
+
 function type_as_string(AttributeDefinition $def)[defaults]: string {
   if ($def['type'] !== 'enum') {
     return $def['type'];
@@ -9,13 +11,13 @@ function type_as_string(AttributeDefinition $def)[defaults]: string {
 
   $values = Shapes::at($def, 'type_enum_values');
 
-  $one_line = Vec\map($values, $t ==> \var_export_pure($t) as string)
+  $one_line = Vec\map($values, $t ==> var_export_pure($t) as string)
     |> Str\join($$, ', ');
   if (Str\length($one_line) < 50) {
     return 'enum {'.$one_line.'}';
   }
 
   // This ends up creating a multiline `enum {`.
-  return \var_export_pure($values) as string
+  return var_export_pure($values) as string
     |> Str\replace_every($$, dict['vec [' => 'enum {', ']' => '}']);
 }

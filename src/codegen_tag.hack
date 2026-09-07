@@ -2,6 +2,7 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH\Lib\{C, Str};
+use function var_export;
 
 function codegen_tag(
   CodegenFile $file,
@@ -36,7 +37,7 @@ function codegen_tag(
   $file->append(
     Str\format(
       'const string TAG_NAME = %s;',
-      \var_export($tag_name, true) as string,
+      var_export($tag_name, true) as string,
     ),
   );
 

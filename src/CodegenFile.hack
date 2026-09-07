@@ -2,6 +2,7 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH\Lib\{File, Str};
+use function escapeshellarg, exec, shell_exec;
 
 final class CodegenFile {
   private string $buffer = '';
@@ -29,6 +30,19 @@ final class CodegenFile {
   public async function writeToDiskAsync()[defaults]: Awaitable<void> {
     await $this->writeToDiskFormattedAsync();
     await $this->addXhpClassModifierAndDemangleAsync();
+    $output = vec[];
+    $status = 0;
+    exec(
+      escapeshellarg(
+        __DIR__.
+        '/../vendor/hershel-theodore-layton/portable-hack-ast-linters-server/bin/pha-sign-hack-source.sh',
+      ).
+      ' '.
+      escapeshellarg($this->path),
+      inout $output,
+      inout $status,
+    );
+    invariant($status === 0, 'Could not sign generated HTML class');
   }
 
   private async function writeToDiskFormattedAsync(
@@ -37,7 +51,7 @@ final class CodegenFile {
     using $file->closeWhenDisposed();
     using $file->tryLockx(File\LockType::EXCLUSIVE);
     await $file->writeAllAsync($this->toString());
-    \shell_exec('hackfmt -i '.\escapeshellarg($this->path));
+    shell_exec('hackfmt -i '.escapeshellarg($this->path));
   }
 
   private async function addXhpClassModifierAndDemangleAsync(
@@ -48,8 +62,7 @@ final class CodegenFile {
     $code = await $file->readAllAsync();
     $file->truncate();
     $file->seek(0);
-    await $file->writeAllAsync(
-      Str\replace($code, 'class _MANGLED_', 'xhp class '),
-    );
+    $code = Str\replace($code, 'class _MANGLED_', 'xhp class ');
+    await $file->writeAllAsync($code);
   }
 }
