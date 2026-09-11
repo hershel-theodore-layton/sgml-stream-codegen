@@ -4,12 +4,15 @@ namespace HTL\SGMLStreamCodegen;
 use namespace HH;
 use namespace HH\Lib\{File, Str};
 use namespace HTL\TypeVisitor;
+use type HTL\Pragma\Pragmas;
 use type RuntimeException;
 use function HTL\PhaLintersServer\hackfmt_and_sign_hack_source_do_not_use_async;
 use function HTL\StaticTypeAssertionCodegen\{
   emit_body_for_assertion_function,
   from_type,
 };
+
+<<file: Pragmas(vec['PhaLinters', 'fixme:autoload_your_code'])>>
 
 <<__EntryPoint>>
 async function generate_type_asserters_async()[defaults]: Awaitable<void> {

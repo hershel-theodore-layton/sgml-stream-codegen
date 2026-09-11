@@ -3,6 +3,9 @@ namespace HTL\SGMLStreamCodegen;
 
 use namespace HH;
 use namespace HH\Lib\{C, Str, Vec};
+use type HTL\Pragma\Pragmas;
+
+<<file: Pragmas(vec['PhaLinters', 'fixme:autoload_your_code'])>>
 
 const int TAGS_DEFINITION_FILE = 1;
 const int GLOBAL_ATTRIBUTES_DEFINITION_FILE = 2;
