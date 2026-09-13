@@ -74,6 +74,15 @@
       "send"
     ]
   },
+  "headingoffset": {
+    "see": "https://html.spec.whatwg.org/multipage/sections.html#attr-headingoffset",
+    "help": "A value in range 0 through 8, that offsets descendant heading levels.",
+    "type": "int"
+  },
+  "headingreset": {
+    "see": "https://html.spec.whatwg.org/multipage/sections.html#attr-headingreset",
+    "type": "SGMLStreamInterfaces\\BooleanAttribute"
+  },
   "hidden": {
     "see": "https://html.spec.whatwg.org/multipage/#attr-hidden",
     "type": "SGMLStreamInterfaces\\BooleanAttribute"

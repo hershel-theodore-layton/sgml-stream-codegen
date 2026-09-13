@@ -99,6 +99,11 @@
         "help": "A URL potentially surrounded by spaces.",
         "type": "string"
       },
+      "hreflang": {
+        "see": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang",
+        "help": "A valid BCP 47 language tag.",
+        "type": "string"
+      },
       "ping": {
         "see": "https://html.spec.whatwg.org/multipage/#ping",
         "help": "A space-separated list of HTTP or HTTPS URLs.",
@@ -137,6 +142,11 @@
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
         "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type",
+        "help": "A MIME type string.",
         "type": "string"
       }
     },
@@ -181,6 +191,14 @@
         "type_enum_values": [
           "anonymous",
           "use-credentials"
+        ]
+      },
+      "loading": {
+        "see": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
+        "type": "enum",
+        "type_enum_values": [
+          "lazy",
+          "eager"
         ]
       },
       "loop": {
@@ -1001,6 +1019,10 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-img-alt",
         "help": "Any text which is an adequate replacement for the missing image.",
         "type": "string"
+      },
+      "controls": {
+        "see": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
       "crossorigin": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-img-crossorigin",
@@ -2008,6 +2030,15 @@
       "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
+  "selectedcontent": {
+    "attributes": {},
+    "base_class": "HTMLElementBase",
+    "interfaces": [],
+    "see": "https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
   "slot": {
     "attributes": {
       "name": {
@@ -2195,6 +2226,11 @@
   },
   "template": {
     "attributes": {
+      "for": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-for",
+        "help": "Allows for out of order html streaming. Finds an html processing instruction, f.e. <?here> and renders the children of the template there.",
+        "type": "string"
+      },
       "shadowrootmode": {
         "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootmode",
         "type": "enum",
@@ -2218,6 +2254,14 @@
       "shadowrootcustomelementregistry": {
         "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "shadowrootslotassignment": {
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment",
+        "type": "enum",
+        "type_enum_values": [
+          "named",
+          "manual"
+        ]
       }
     },
     "base_class": "HTMLElementBase",
@@ -2475,6 +2519,14 @@
       "height": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
         "type": "int"
+      },
+      "loading": {
+        "see": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
+        "type": "enum",
+        "type_enum_values": [
+          "lazy",
+          "eager"
+        ]
       },
       "loop": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-loop",
