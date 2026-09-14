@@ -8,5 +8,21 @@ services:
       - type: bind
         source: .
         target: /mnt/project
+      # build/ symlinks resolve to these sibling checkouts.
+      - type: bind
+        source: ../html-stream-namespaced
+        target: /mnt/html-stream-namespaced
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../html-stream-non-namespaced
+        target: /mnt/html-stream-non-namespaced
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../svg-stream-namespaced
+        target: /mnt/svg-stream-namespaced
+        bind:
+          create_host_path: false
     ports:
       - 48555:10641

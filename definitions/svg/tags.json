@@ -1,0 +1,4203 @@
+{
+  "a": {
+    "attributes": {
+      "download": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementDownloadAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementHrefAttribute",
+        "type": "string"
+      },
+      "hreflang": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementHreflangAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "ping": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementPingAttribute",
+        "type": "string"
+      },
+      "referrerpolicy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementReferrerpolicyAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "no-referrer",
+          "no-referrer-when-downgrade",
+          "same-origin",
+          "origin",
+          "strict-origin",
+          "origin-when-cross-origin",
+          "strict-origin-when-cross-origin",
+          "unsafe-url"
+        ]
+      },
+      "rel": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementRelAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "target": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementTargetAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#AElementTypeAttribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#elementdef-a",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "animate": {
+    "attributes": {
+      "accumulate": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AccumulateAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "none",
+          "sum"
+        ]
+      },
+      "additive": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AdditiveAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "replace",
+          "sum"
+        ]
+      },
+      "attributeName": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AttributeNameAttribute",
+        "type": "string"
+      },
+      "begin": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#BeginAttribute",
+        "type": "string"
+      },
+      "by": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ByAttribute",
+        "type": "string"
+      },
+      "calcMode": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#CalcModeAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "discrete",
+          "linear",
+          "paced",
+          "spline"
+        ]
+      },
+      "dur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#DurAttribute",
+        "type": "string"
+      },
+      "end": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#EndAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FillAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "remove",
+          "freeze"
+        ]
+      },
+      "from": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FromAttribute",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "type": "string"
+      },
+      "keySplines": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeySplinesAttribute",
+        "type": "string"
+      },
+      "keyTimes": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeyTimesAttribute",
+        "type": "string"
+      },
+      "max": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MaxAttribute",
+        "type": "string"
+      },
+      "min": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MinAttribute",
+        "type": "string"
+      },
+      "onbegin": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnBeginEventAttribute",
+        "type": "string"
+      },
+      "onend": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnEndEventAttribute",
+        "type": "string"
+      },
+      "onrepeat": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnRepeatEventAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "repeatCount": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatCountAttribute",
+        "type": "string"
+      },
+      "repeatDur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatDurAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "restart": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RestartAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "always",
+          "whenNotActive",
+          "never"
+        ]
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "to": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ToAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "values": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ValuesAttribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "help": "Deprecated in SVG 2; prefer href.",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/specs/animations/#elementdef-animate",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "animateMotion": {
+    "attributes": {
+      "accumulate": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AccumulateAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "none",
+          "sum"
+        ]
+      },
+      "additive": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AdditiveAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "replace",
+          "sum"
+        ]
+      },
+      "begin": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#BeginAttribute",
+        "type": "string"
+      },
+      "by": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ByAttribute",
+        "type": "string"
+      },
+      "calcMode": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#CalcModeAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "discrete",
+          "linear",
+          "paced",
+          "spline"
+        ]
+      },
+      "dur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#DurAttribute",
+        "type": "string"
+      },
+      "end": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#EndAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FillAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "remove",
+          "freeze"
+        ]
+      },
+      "from": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FromAttribute",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "type": "string"
+      },
+      "keyPoints": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeyPointsAttribute",
+        "type": "string"
+      },
+      "keySplines": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeySplinesAttribute",
+        "type": "string"
+      },
+      "keyTimes": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeyTimesAttribute",
+        "type": "string"
+      },
+      "max": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MaxAttribute",
+        "type": "string"
+      },
+      "min": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MinAttribute",
+        "type": "string"
+      },
+      "onbegin": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnBeginEventAttribute",
+        "type": "string"
+      },
+      "onend": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnEndEventAttribute",
+        "type": "string"
+      },
+      "onrepeat": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnRepeatEventAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "origin": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#OriginAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "default"
+        ]
+      },
+      "path": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AnimateMotionElementPathAttribute",
+        "type": "string"
+      },
+      "repeatCount": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatCountAttribute",
+        "type": "string"
+      },
+      "repeatDur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatDurAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "restart": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RestartAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "always",
+          "whenNotActive",
+          "never"
+        ]
+      },
+      "rotate": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RotateAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "to": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ToAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "values": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ValuesAttribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "help": "Deprecated in SVG 2; prefer href.",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/specs/animations/#elementdef-animateMotion",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "animateTransform": {
+    "attributes": {
+      "accumulate": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AccumulateAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "none",
+          "sum"
+        ]
+      },
+      "additive": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AdditiveAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "replace",
+          "sum"
+        ]
+      },
+      "attributeName": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AttributeNameAttribute",
+        "type": "string"
+      },
+      "begin": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#BeginAttribute",
+        "type": "string"
+      },
+      "by": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ByAttribute",
+        "type": "string"
+      },
+      "calcMode": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#CalcModeAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "discrete",
+          "linear",
+          "paced",
+          "spline"
+        ]
+      },
+      "dur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#DurAttribute",
+        "type": "string"
+      },
+      "end": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#EndAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FillAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "remove",
+          "freeze"
+        ]
+      },
+      "from": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FromAttribute",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "type": "string"
+      },
+      "keySplines": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeySplinesAttribute",
+        "type": "string"
+      },
+      "keyTimes": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#KeyTimesAttribute",
+        "type": "string"
+      },
+      "max": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MaxAttribute",
+        "type": "string"
+      },
+      "min": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MinAttribute",
+        "type": "string"
+      },
+      "onbegin": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnBeginEventAttribute",
+        "type": "string"
+      },
+      "onend": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnEndEventAttribute",
+        "type": "string"
+      },
+      "onrepeat": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnRepeatEventAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "repeatCount": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatCountAttribute",
+        "type": "string"
+      },
+      "repeatDur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatDurAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "restart": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RestartAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "always",
+          "whenNotActive",
+          "never"
+        ]
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "to": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ToAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AnimateTransformElementTypeAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "translate",
+          "scale",
+          "rotate",
+          "skewX",
+          "skewY"
+        ]
+      },
+      "values": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#ValuesAttribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "help": "Deprecated in SVG 2; prefer href.",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/specs/animations/#elementdef-animateTransform",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "circle": {
+    "attributes": {
+      "cx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CxProperty",
+        "type": "string"
+      },
+      "cy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CyProperty",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "r": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RProperty",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-circle",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "clipPath": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "clipPathUnits": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-clippath-clippathunits",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "color-profile": {
+        "see": "https://www.w3.org/TR/SVG11/color.html#ColorProfileProperty",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://www.w3.org/TR/SVG11/filters.html#EnableBackgroundProperty",
+        "type": "string"
+      },
+      "externalResourcesRequired": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#ExternalResourcesRequiredAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "true",
+          "false"
+        ],
+        "help": "The literal string true or false, not an HTML boolean attribute."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "glyph-orientation-horizontal": {
+        "see": "https://www.w3.org/TR/SVG11/text.html#GlyphOrientationHorizontalProperty",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://www.w3.org/TR/SVG11/text.html#KerningProperty",
+        "type": "string"
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "requiredFeatures": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#RequiredFeaturesAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/css-masking-1/#elementdef-clippath",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "defs": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-defs",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "desc": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-desc",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "ellipse": {
+    "attributes": {
+      "cx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CxProperty",
+        "type": "string"
+      },
+      "cy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#CyProperty",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "rx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty",
+        "type": "string"
+      },
+      "ry": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-ellipse",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feBlend": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feblend",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "in2": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feblend-in2",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feblend",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "mode": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feblend-mode",
+        "type": "string"
+      },
+      "no-composite": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feblend-no-composite",
+        "type": "enum",
+        "type_enum_values": [
+          "no-composite"
+        ]
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feblend",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feColorMatrix": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecolormatrix",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecolormatrix",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecolormatrix-type",
+        "type": "enum",
+        "type_enum_values": [
+          "matrix",
+          "saturate",
+          "hueRotate",
+          "luminanceToAlpha"
+        ]
+      },
+      "values": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecolormatrix-values",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecolormatrix",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feComponentTransfer": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecomponenttransfer",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecomponenttransfer",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecomponenttransfer",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feComposite": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecomposite",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "in2": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-in2",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "k1": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k1",
+        "type": "num"
+      },
+      "k2": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k2",
+        "type": "num"
+      },
+      "k3": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k3",
+        "type": "num"
+      },
+      "k4": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-k4",
+        "type": "num"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecomposite",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "operator": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomposite-operator",
+        "type": "enum",
+        "type_enum_values": [
+          "over",
+          "in",
+          "out",
+          "atop",
+          "xor",
+          "lighter",
+          "arithmetic"
+        ]
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fecomposite",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feConvolveMatrix": {
+    "attributes": {
+      "bias": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-bias",
+        "type": "num"
+      },
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "divisor": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-divisor",
+        "type": "num"
+      },
+      "edgeMode": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-edgemode",
+        "type": "enum",
+        "type_enum_values": [
+          "duplicate",
+          "wrap",
+          "none"
+        ]
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feconvolvematrix",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kernelMatrix": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-kernelmatrix",
+        "type": "string"
+      },
+      "kernelUnitLength": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-kernelunitlength",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feconvolvematrix",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "order": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-order",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "preserveAlpha": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-preservealpha",
+        "type": "enum",
+        "type_enum_values": [
+          "true",
+          "false"
+        ],
+        "help": "The literal string true or false, not an HTML boolean attribute."
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "targetX": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-targetx",
+        "type": "int"
+      },
+      "targetY": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feconvolvematrix-targety",
+        "type": "int"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feconvolvematrix",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feDiffuseLighting": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "diffuseConstant": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fediffuselighting-diffuseconstant",
+        "type": "num"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fediffuselighting",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kernelUnitLength": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fediffuselighting-kernelunitlength",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fediffuselighting",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "surfaceScale": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fediffuselighting-surfacescale",
+        "type": "num"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fediffuselighting",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feDisplacementMap": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedisplacementmap",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "in2": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-in2",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedisplacementmap",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "scale": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-scale",
+        "type": "num"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "xChannelSelector": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-xchannelselector",
+        "type": "enum",
+        "type_enum_values": [
+          "R",
+          "G",
+          "B",
+          "A"
+        ]
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      },
+      "yChannelSelector": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedisplacementmap-ychannelselector",
+        "type": "enum",
+        "type_enum_values": [
+          "R",
+          "G",
+          "B",
+          "A"
+        ]
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedisplacementmap",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feDistantLight": {
+    "attributes": {
+      "azimuth": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedistantlight-azimuth",
+        "type": "num"
+      },
+      "elevation": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedistantlight-elevation",
+        "type": "num"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedistantlight",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feDropShadow": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "dx": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedropshadow-dx",
+        "type": "num"
+      },
+      "dy": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedropshadow-dy",
+        "type": "num"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedropshadow",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedropshadow",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "stdDeviation": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fedropshadow-stddeviation",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "num"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "num"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fedropshadow",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feFlood": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feflood",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feflood",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feflood",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feFuncA": {
+    "attributes": {
+      "amplitude": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-amplitude",
+        "type": "num"
+      },
+      "exponent": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-exponent",
+        "type": "num"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "intercept": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-intercept",
+        "type": "num"
+      },
+      "offset": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-offset",
+        "type": "num"
+      },
+      "slope": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-slope",
+        "type": "num"
+      },
+      "tableValues": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-tablevalues",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-type",
+        "type": "enum",
+        "type_enum_values": [
+          "identity",
+          "table",
+          "discrete",
+          "linear",
+          "gamma"
+        ]
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fefunca",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feFuncB": {
+    "attributes": {
+      "amplitude": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-amplitude",
+        "type": "num"
+      },
+      "exponent": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-exponent",
+        "type": "num"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "intercept": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-intercept",
+        "type": "num"
+      },
+      "offset": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-offset",
+        "type": "num"
+      },
+      "slope": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-slope",
+        "type": "num"
+      },
+      "tableValues": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-tablevalues",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-type",
+        "type": "enum",
+        "type_enum_values": [
+          "identity",
+          "table",
+          "discrete",
+          "linear",
+          "gamma"
+        ]
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fefuncb",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feFuncG": {
+    "attributes": {
+      "amplitude": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-amplitude",
+        "type": "num"
+      },
+      "exponent": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-exponent",
+        "type": "num"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "intercept": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-intercept",
+        "type": "num"
+      },
+      "offset": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-offset",
+        "type": "num"
+      },
+      "slope": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-slope",
+        "type": "num"
+      },
+      "tableValues": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-tablevalues",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-type",
+        "type": "enum",
+        "type_enum_values": [
+          "identity",
+          "table",
+          "discrete",
+          "linear",
+          "gamma"
+        ]
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fefuncg",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feFuncR": {
+    "attributes": {
+      "amplitude": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-amplitude",
+        "type": "num"
+      },
+      "exponent": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-exponent",
+        "type": "num"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "intercept": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-intercept",
+        "type": "num"
+      },
+      "offset": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-offset",
+        "type": "num"
+      },
+      "slope": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-slope",
+        "type": "num"
+      },
+      "tableValues": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-tablevalues",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fecomponenttransfer-type",
+        "type": "enum",
+        "type_enum_values": [
+          "identity",
+          "table",
+          "discrete",
+          "linear",
+          "gamma"
+        ]
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fefuncr",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feGaussianBlur": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "edgeMode": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fegaussianblur-edgemode",
+        "type": "enum",
+        "type_enum_values": [
+          "duplicate",
+          "wrap",
+          "mirror",
+          "none"
+        ]
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fegaussianblur",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fegaussianblur",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "stdDeviation": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fegaussianblur-stddeviation",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fegaussianblur",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feImage": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "crossorigin": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-crossorigin",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feimage",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "externalResourcesRequired": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#ExternalResourcesRequiredAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "true",
+          "false"
+        ],
+        "help": "The literal string true or false, not an HTML boolean attribute."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-href",
+        "type": "string"
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feimage",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "preserveAspectRatio": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-preserveaspectratio",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feimage-xlinkhref",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feimage",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feMerge": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femerge",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femerge",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femerge",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feMergeNode": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femergenode",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feMorphology": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femorphology",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femorphology",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "operator": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-femorphology-operator",
+        "type": "enum",
+        "type_enum_values": [
+          "erode",
+          "dilate"
+        ]
+      },
+      "radius": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-femorphology-radius",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-femorphology",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feOffset": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "dx": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feoffset-dx",
+        "type": "num"
+      },
+      "dy": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feoffset-dy",
+        "type": "num"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feoffset",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feoffset",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "num"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "num"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feoffset",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "fePointLight": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fepointlight-x",
+        "type": "num"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fepointlight-y",
+        "type": "num"
+      },
+      "z": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fepointlight-z",
+        "type": "num"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fepointlight",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feSpecularLighting": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fespecularlighting",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kernelUnitLength": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-kernelunitlength",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fespecularlighting",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "specularConstant": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-specularconstant",
+        "type": "num"
+      },
+      "specularExponent": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-specularexponent",
+        "type": "num"
+      },
+      "surfaceScale": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespecularlighting-surfacescale",
+        "type": "num"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fespecularlighting",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feSpotLight": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "limitingConeAngle": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-limitingconeangle",
+        "type": "num"
+      },
+      "pointsAtX": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-pointsatx",
+        "type": "num"
+      },
+      "pointsAtY": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-pointsaty",
+        "type": "num"
+      },
+      "pointsAtZ": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-pointsatz",
+        "type": "num"
+      },
+      "specularExponent": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-specularexponent",
+        "type": "num"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-x",
+        "type": "num"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-y",
+        "type": "num"
+      },
+      "z": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-fespotlight-z",
+        "type": "num"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fespotlight",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feTile": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fetile",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "in": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-in",
+        "type": "string",
+        "help": "A filter input keyword or a result name from an earlier filter primitive."
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fetile",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-fetile",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "feTurbulence": {
+    "attributes": {
+      "baseFrequency": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-basefrequency",
+        "type": "string",
+        "help": "One or two values, separated by commas or whitespace; see the specification for allowed ranges."
+      },
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feturbulence",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-height",
+        "type": "string"
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feturbulence",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "numOctaves": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-numoctaves",
+        "type": "int"
+      },
+      "result": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-result",
+        "type": "string"
+      },
+      "seed": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-seed",
+        "type": "num"
+      },
+      "stitchTiles": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-stitchtiles",
+        "type": "enum",
+        "type_enum_values": [
+          "stitch",
+          "noStitch"
+        ]
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-feturbulence-type",
+        "type": "enum",
+        "type_enum_values": [
+          "fractalNoise",
+          "turbulence"
+        ]
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-feturbulence",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "filter": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-filter",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "externalResourcesRequired": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#ExternalResourcesRequiredAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "true",
+          "false"
+        ],
+        "help": "The literal string true or false, not an HTML boolean attribute."
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "filterRes": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-filterres",
+        "type": "string",
+        "help": "Deprecated by Filter Effects; implementations ignore this attribute."
+      },
+      "filterUnits": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-filterunits",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-height",
+        "type": "string"
+      },
+      "isolation": {
+        "see": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-filter",
+        "type": "string",
+        "help": "A legacy presentation attribute retained in this module's element summary."
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "primitiveUnits": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitiveunits",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/filter-effects-1/#elementdef-filter",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "foreignObject": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#elementdef-foreignObject",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "g": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-g",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "image": {
+    "attributes": {
+      "crossorigin": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#ImageElementCrossoriginAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#ImageElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "preserveAspectRatio": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/embedded.html#elementdef-image",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "line": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "x1": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementX1Attribute",
+        "type": "string"
+      },
+      "x2": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementX2Attribute",
+        "type": "string"
+      },
+      "y1": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementY1Attribute",
+        "type": "string"
+      },
+      "y2": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#LineElementY2Attribute",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-line",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "linearGradient": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "gradientTransform": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementGradientTransformAttribute",
+        "type": "string"
+      },
+      "gradientUnits": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementGradientUnitsAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "spreadMethod": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementSpreadMethodAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "pad",
+          "reflect",
+          "repeat"
+        ]
+      },
+      "x1": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementX1Attribute",
+        "type": "string"
+      },
+      "x2": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementX2Attribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      },
+      "y1": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementY1Attribute",
+        "type": "string"
+      },
+      "y2": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#LinearGradientElementY2Attribute",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-linearGradient",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "marker": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "markerHeight": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerHeightAttribute",
+        "type": "string"
+      },
+      "markerUnits": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerUnitsAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "strokeWidth",
+          "userSpaceOnUse"
+        ]
+      },
+      "markerWidth": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerWidthAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "orient": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#OrientAttribute",
+        "type": "string"
+      },
+      "preserveAspectRatio": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+        "type": "string"
+      },
+      "refX": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerElementRefXAttribute",
+        "type": "string"
+      },
+      "refY": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerElementRefYAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "viewBox": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#ViewBoxAttribute",
+        "type": "string",
+        "help": "Four numbers: min-x, min-y, width, height. Width and height must be non-negative."
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#elementdef-marker",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "mask": {
+    "attributes": {
+      "clip": {
+        "see": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
+        "type": "string"
+      },
+      "color-profile": {
+        "see": "https://www.w3.org/TR/SVG11/color.html#ColorProfileProperty",
+        "type": "string"
+      },
+      "color-rendering": {
+        "see": "https://www.w3.org/TR/SVG2/painting.html#ColorRenderingProperty",
+        "type": "string"
+      },
+      "enable-background": {
+        "see": "https://www.w3.org/TR/SVG11/filters.html#EnableBackgroundProperty",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "font": {
+        "see": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
+        "type": "string"
+      },
+      "glyph-orientation-horizontal": {
+        "see": "https://www.w3.org/TR/SVG11/text.html#GlyphOrientationHorizontalProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-mask-height",
+        "type": "string"
+      },
+      "kerning": {
+        "see": "https://www.w3.org/TR/SVG11/text.html#KerningProperty",
+        "type": "string"
+      },
+      "marker": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerProperty",
+        "type": "string"
+      },
+      "maskContentUnits": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-mask-maskcontentunits",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "maskUnits": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-mask-maskunits",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "requiredExtensions": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "requiredFeatures": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#RequiredFeaturesAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://www.w3.org/TR/2011/REC-SVG11-20110816/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-mask-width",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-mask-x",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://drafts.csswg.org/css-masking-1/#element-attrdef-mask-y",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://drafts.csswg.org/css-masking-1/#elementdef-mask",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "metadata": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-metadata",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "mpath": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MPathElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "help": "Deprecated in SVG 2; prefer href.",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/specs/animations/#elementdef-mpath",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "path": {
+    "attributes": {
+      "d": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#DProperty",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#elementdef-path",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "pattern": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementHeightAttribute",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "patternContentUnits": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementPatternContentUnitsAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "patternTransform": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementPatternTransformAttribute",
+        "type": "string"
+      },
+      "patternUnits": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementPatternUnitsAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "preserveAspectRatio": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+        "type": "string"
+      },
+      "viewBox": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#ViewBoxAttribute",
+        "type": "string",
+        "help": "Four numbers: min-x, min-y, width, height. Width and height must be non-negative."
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementWidthAttribute",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementXAttribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#PatternElementYAttribute",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-pattern",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "polygon": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "points": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#PolygonElementPointsAttribute",
+        "type": "string",
+        "help": "Coordinate pairs separated by commas or whitespace."
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-polygon",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "polyline": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "points": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#PolylineElementPointsAttribute",
+        "type": "string",
+        "help": "Coordinate pairs separated by commas or whitespace."
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-polyline",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "radialGradient": {
+    "attributes": {
+      "cx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementCXAttribute",
+        "type": "string"
+      },
+      "cy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementCYAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "fr": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementFRAttribute",
+        "type": "string"
+      },
+      "fx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementFXAttribute",
+        "type": "string"
+      },
+      "fy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementFYAttribute",
+        "type": "string"
+      },
+      "gradientTransform": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementGradientTransformAttribute",
+        "type": "string"
+      },
+      "gradientUnits": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementGradientUnitsAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "userSpaceOnUse",
+          "objectBoundingBox"
+        ]
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "r": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementRAttribute",
+        "type": "string"
+      },
+      "spreadMethod": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#RadialGradientElementSpreadMethodAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "pad",
+          "reflect",
+          "repeat"
+        ]
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-radialGradient",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "rect": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "pathLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/paths.html#PathLengthAttribute",
+        "type": "num",
+        "help": "A non-negative number specifying the author-calibrated path length."
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "rx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RxProperty",
+        "type": "string"
+      },
+      "ry": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#RyProperty",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#elementdef-rect",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "script": {
+    "attributes": {
+      "crossorigin": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#ScriptElementCrossoriginAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "anonymous",
+          "use-credentials"
+        ]
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#ScriptElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#ScriptElementTypeAttribute",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#elementdef-script",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "set": {
+    "attributes": {
+      "attributeName": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#AttributeNameAttribute",
+        "type": "string"
+      },
+      "begin": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#BeginAttribute",
+        "type": "string"
+      },
+      "dur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#DurAttribute",
+        "type": "string"
+      },
+      "end": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#EndAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#FillAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "remove",
+          "freeze"
+        ]
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "type": "string"
+      },
+      "max": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MaxAttribute",
+        "type": "string"
+      },
+      "min": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#MinAttribute",
+        "type": "string"
+      },
+      "onbegin": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnBeginEventAttribute",
+        "type": "string"
+      },
+      "onend": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnEndEventAttribute",
+        "type": "string"
+      },
+      "onrepeat": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#OnRepeatEventAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "repeatCount": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatCountAttribute",
+        "type": "string"
+      },
+      "repeatDur": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RepeatDurAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "restart": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#RestartAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "always",
+          "whenNotActive",
+          "never"
+        ]
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "to": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#SetElementToAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#HrefAttribute",
+        "help": "Deprecated in SVG 2; prefer href.",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/specs/animations/#elementdef-set",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "stop": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "offset": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#StopElementOffsetAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#elementdef-stop",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "style": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "media": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/styling.html#StyleElementMediaAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "type": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/styling.html#StyleElementTypeAttribute",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/styling.html#elementdef-style",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "svg": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "onunload": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "playbackorder": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#SVGElementPlaybackorderAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "forwardonly",
+          "all"
+        ]
+      },
+      "preserveAspectRatio": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "timelinebegin": {
+        "see": "https://w3c.github.io/svgwg/specs/animations/#SVGElementTimelinebeginAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "loadend",
+          "loadbegin"
+        ]
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "viewBox": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#ViewBoxAttribute",
+        "type": "string",
+        "help": "Four numbers: min-x, min-y, width, height. Width and height must be non-negative."
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "switch": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-switch",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "symbol": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "preserveAspectRatio": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+        "type": "string"
+      },
+      "refX": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SymbolElementRefXAttribute",
+        "type": "string"
+      },
+      "refY": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SymbolElementRefYAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "viewBox": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#ViewBoxAttribute",
+        "type": "string",
+        "help": "Four numbers: min-x, min-y, width, height. Width and height must be non-negative."
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-symbol",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "text": {
+    "attributes": {
+      "dx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementDXAttribute",
+        "type": "string"
+      },
+      "dy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementDYAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "lengthAdjust": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementLengthAdjustAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "spacing",
+          "spacingAndGlyphs"
+        ]
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "rotate": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementRotateAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "textLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementXAttribute",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementYAttribute",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-text",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "textPath": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementHrefAttribute",
+        "type": "string"
+      },
+      "lengthAdjust": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementLengthAdjustAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "spacing",
+          "spacingAndGlyphs"
+        ]
+      },
+      "method": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementMethodAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "align",
+          "stretch"
+        ]
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "path": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementPathAttribute",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "side": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementSideAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "left",
+          "right"
+        ]
+      },
+      "spacing": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementSpacingAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "auto",
+          "exact"
+        ]
+      },
+      "startOffset": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElementStartOffsetAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "textLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-textPath",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "title": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-title",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "tspan": {
+    "attributes": {
+      "dx": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementDXAttribute",
+        "type": "string"
+      },
+      "dy": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementDYAttribute",
+        "type": "string"
+      },
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "lengthAdjust": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementLengthAdjustAttribute",
+        "type": "enum",
+        "type_enum_values": [
+          "spacing",
+          "spacingAndGlyphs"
+        ]
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "rotate": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementRotateAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "textLength": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementTextLengthAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementXAttribute",
+        "type": "string"
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementYAttribute",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#elementdef-tspan",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "use": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "height": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#UseElementHrefAttribute",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "requiredExtensions": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#RequiredExtensionsAttribute",
+        "type": "string"
+      },
+      "systemLanguage": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#SystemLanguageAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "width": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
+        "type": "string"
+      },
+      "x": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#XProperty",
+        "type": "string"
+      },
+      "xlink:href": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkHrefAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer href."
+      },
+      "xlink:title": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#XLinkTitleAttribute",
+        "type": "string",
+        "help": "Deprecated in SVG 2; prefer a title child element."
+      },
+      "y": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#YProperty",
+        "type": "string"
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-use",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  },
+  "view": {
+    "attributes": {
+      "fill": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillProperty",
+        "type": "string"
+      },
+      "onshow": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "type": "string"
+      },
+      "preserveAspectRatio": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#PreserveAspectRatioAttribute",
+        "type": "string"
+      },
+      "transform": {
+        "see": "https://drafts.csswg.org/css-transforms-1/#svg-transform",
+        "type": "string"
+      },
+      "viewBox": {
+        "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#ViewBoxAttribute",
+        "type": "string",
+        "help": "Four numbers: min-x, min-y, width, height. Width and height must be non-negative."
+      }
+    },
+    "base_class": "SVGElementBase",
+    "interfaces": [],
+    "see": "https://w3c.github.io/svgwg/svg2-draft/linking.html#elementdef-view",
+    "traits": [
+      "SGMLStream\\ElementWithOpenAndCloseTags"
+    ]
+  }
+}

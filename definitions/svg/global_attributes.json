@@ -1,0 +1,328 @@
+{
+  "alignment-baseline": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#AlignmentBaselineProperty",
+    "type": "string",
+    "help": "A CSS value for alignment-baseline, including CSS-wide keywords and var() expressions."
+  },
+  "baseline-shift": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#BaselineShiftProperty",
+    "type": "string",
+    "help": "A CSS value for baseline-shift, including CSS-wide keywords and var() expressions."
+  },
+  "clip-path": {
+    "see": "https://drafts.csswg.org/css-masking-1/#the-clip-path",
+    "type": "string",
+    "help": "A CSS value for clip-path, including CSS-wide keywords and var() expressions."
+  },
+  "clip-rule": {
+    "see": "https://drafts.csswg.org/css-masking-1/#the-clip-rule",
+    "type": "string",
+    "help": "A CSS value for clip-rule, including CSS-wide keywords and var() expressions."
+  },
+  "color": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ColorProperty",
+    "type": "string",
+    "help": "A CSS value for color, including CSS-wide keywords and var() expressions."
+  },
+  "color-interpolation": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ColorInterpolationProperty",
+    "type": "string",
+    "help": "A CSS value for color-interpolation, including CSS-wide keywords and var() expressions."
+  },
+  "color-interpolation-filters": {
+    "see": "https://drafts.csswg.org/filter-effects-1/#ColorInterpolationFiltersProperty",
+    "type": "string",
+    "help": "A CSS value for color-interpolation-filters, including CSS-wide keywords and var() expressions."
+  },
+  "cursor": {
+    "see": "https://www.w3.org/TR/css-ui-3/#cursor",
+    "type": "string",
+    "help": "A CSS value for cursor, including CSS-wide keywords and var() expressions."
+  },
+  "direction": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#DirectionProperty",
+    "type": "string",
+    "help": "A CSS value for direction, including CSS-wide keywords and var() expressions."
+  },
+  "display": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/render.html#VisibilityControl",
+    "type": "string",
+    "help": "A CSS value for display, including CSS-wide keywords and var() expressions."
+  },
+  "dominant-baseline": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#DominantBaselineProperty",
+    "type": "string",
+    "help": "A CSS value for dominant-baseline, including CSS-wide keywords and var() expressions."
+  },
+  "fill-opacity": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillOpacityProperty",
+    "type": "string",
+    "help": "A CSS value for fill-opacity, including CSS-wide keywords and var() expressions."
+  },
+  "fill-rule": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#FillRuleProperty",
+    "type": "string",
+    "help": "A CSS value for fill-rule, including CSS-wide keywords and var() expressions."
+  },
+  "filter": {
+    "see": "https://drafts.csswg.org/filter-effects-1/#FilterProperty",
+    "type": "string",
+    "help": "A CSS value for filter, including CSS-wide keywords and var() expressions."
+  },
+  "flood-color": {
+    "see": "https://drafts.csswg.org/filter-effects-1/#FloodColorProperty",
+    "type": "string",
+    "help": "A CSS value for flood-color, including CSS-wide keywords and var() expressions."
+  },
+  "flood-opacity": {
+    "see": "https://drafts.csswg.org/filter-effects-1/#FloodOpacityProperty",
+    "type": "string",
+    "help": "A CSS value for flood-opacity, including CSS-wide keywords and var() expressions."
+  },
+  "font-family": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#font-family-prop",
+    "type": "string",
+    "help": "A CSS value for font-family, including CSS-wide keywords and var() expressions."
+  },
+  "font-size": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#font-size-prop",
+    "type": "string",
+    "help": "A CSS value for font-size, including CSS-wide keywords and var() expressions."
+  },
+  "font-size-adjust": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#font-size-adjust-prop",
+    "type": "string",
+    "help": "A CSS value for font-size-adjust, including CSS-wide keywords and var() expressions."
+  },
+  "font-stretch": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#font-stretch-prop",
+    "type": "string",
+    "help": "A CSS value for font-stretch, including CSS-wide keywords and var() expressions."
+  },
+  "font-style": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#font-style-prop",
+    "type": "string",
+    "help": "A CSS value for font-style, including CSS-wide keywords and var() expressions."
+  },
+  "font-variant": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#propdef-font-variant",
+    "type": "string",
+    "help": "A CSS value for font-variant, including CSS-wide keywords and var() expressions."
+  },
+  "font-weight": {
+    "see": "https://www.w3.org/TR/css-fonts-3/#font-weight-prop",
+    "type": "string",
+    "help": "A CSS value for font-weight, including CSS-wide keywords and var() expressions."
+  },
+  "glyph-orientation-vertical": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#GlyphOrientationVerticalProperty",
+    "type": "string",
+    "help": "A CSS value for glyph-orientation-vertical, including CSS-wide keywords and var() expressions."
+  },
+  "image-rendering": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ImageRenderingProperty",
+    "type": "string",
+    "help": "A CSS value for image-rendering, including CSS-wide keywords and var() expressions."
+  },
+  "letter-spacing": {
+    "see": "https://www.w3.org/TR/css-text-3/#letter-spacing-property",
+    "type": "string",
+    "help": "A CSS value for letter-spacing, including CSS-wide keywords and var() expressions."
+  },
+  "lighting-color": {
+    "see": "https://drafts.csswg.org/filter-effects-1/#LightingColorProperty",
+    "type": "string",
+    "help": "A CSS value for lighting-color, including CSS-wide keywords and var() expressions."
+  },
+  "marker-end": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerEndProperty",
+    "type": "string",
+    "help": "A CSS value for marker-end, including CSS-wide keywords and var() expressions."
+  },
+  "marker-mid": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerMidProperty",
+    "type": "string",
+    "help": "A CSS value for marker-mid, including CSS-wide keywords and var() expressions."
+  },
+  "marker-start": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#MarkerStartProperty",
+    "type": "string",
+    "help": "A CSS value for marker-start, including CSS-wide keywords and var() expressions."
+  },
+  "mask": {
+    "see": "https://drafts.csswg.org/css-masking-1/#propdef-mask",
+    "type": "string",
+    "help": "A CSS value for mask, including CSS-wide keywords and var() expressions."
+  },
+  "mask-type": {
+    "see": "https://drafts.csswg.org/css-masking-1/#propdef-mask-type",
+    "type": "string",
+    "help": "A CSS value for mask-type, including CSS-wide keywords and var() expressions."
+  },
+  "ondragexit": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+    "type": "string"
+  },
+  "opacity": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/render.html#ObjectAndGroupOpacityProperties",
+    "type": "string",
+    "help": "A CSS value for opacity, including CSS-wide keywords and var() expressions."
+  },
+  "overflow": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/render.html#OverflowAndClipProperties",
+    "type": "string",
+    "help": "A CSS value for overflow, including CSS-wide keywords and var() expressions."
+  },
+  "paint-order": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#PaintOrderProperty",
+    "type": "string",
+    "help": "A CSS value for paint-order, including CSS-wide keywords and var() expressions."
+  },
+  "pointer-events": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#PointerEventsProperty",
+    "type": "string",
+    "help": "A CSS value for pointer-events, including CSS-wide keywords and var() expressions."
+  },
+  "shape-rendering": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#ShapeRenderingProperty",
+    "type": "string",
+    "help": "A CSS value for shape-rendering, including CSS-wide keywords and var() expressions."
+  },
+  "stop-color": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#StopColorProperty",
+    "type": "string",
+    "help": "A CSS value for stop-color, including CSS-wide keywords and var() expressions."
+  },
+  "stop-opacity": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#StopOpacityProperty",
+    "type": "string",
+    "help": "A CSS value for stop-opacity, including CSS-wide keywords and var() expressions."
+  },
+  "stroke": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeProperty",
+    "type": "string",
+    "help": "A CSS value for stroke, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-dasharray": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeDasharrayProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-dasharray, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-dashoffset": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeDashoffsetProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-dashoffset, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-linecap": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeLinecapProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-linecap, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-linejoin": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeLinejoinProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-linejoin, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-miterlimit": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeMiterlimitProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-miterlimit, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-opacity": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeOpacityProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-opacity, including CSS-wide keywords and var() expressions."
+  },
+  "stroke-width": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#StrokeWidthProperty",
+    "type": "string",
+    "help": "A CSS value for stroke-width, including CSS-wide keywords and var() expressions."
+  },
+  "text-anchor": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextAnchorProperty",
+    "type": "string",
+    "help": "A CSS value for text-anchor, including CSS-wide keywords and var() expressions."
+  },
+  "text-decoration": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextDecorationProperties",
+    "type": "string",
+    "help": "A CSS value for text-decoration, including CSS-wide keywords and var() expressions."
+  },
+  "text-overflow": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#TextOverflowProperty",
+    "type": "string",
+    "help": "A CSS value for text-overflow, including CSS-wide keywords and var() expressions."
+  },
+  "text-rendering": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/painting.html#TextRenderingProperty",
+    "type": "string",
+    "help": "A CSS value for text-rendering, including CSS-wide keywords and var() expressions."
+  },
+  "transform-origin": {
+    "see": "https://drafts.csswg.org/css-transforms/#transform-origin-property",
+    "type": "string",
+    "help": "A CSS value for transform-origin, including CSS-wide keywords and var() expressions."
+  },
+  "unicode-bidi": {
+    "see": "https://www.w3.org/TR/css-writing-modes-3/#unicode-bidi",
+    "type": "string",
+    "help": "A CSS value for unicode-bidi, including CSS-wide keywords and var() expressions."
+  },
+  "vector-effect": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/coords.html#VectorEffectProperty",
+    "type": "string",
+    "help": "A CSS value for vector-effect, including CSS-wide keywords and var() expressions."
+  },
+  "visibility": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/render.html#VisibilityControl",
+    "type": "string",
+    "help": "A CSS value for visibility, including CSS-wide keywords and var() expressions."
+  },
+  "white-space": {
+    "see": "https://www.w3.org/TR/css-text-3/#white-space-property",
+    "type": "string",
+    "help": "A CSS value for white-space, including CSS-wide keywords and var() expressions."
+  },
+  "word-spacing": {
+    "see": "https://www.w3.org/TR/css-text-3/#word-spacing-property",
+    "type": "string",
+    "help": "A CSS value for word-spacing, including CSS-wide keywords and var() expressions."
+  },
+  "writing-mode": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/text.html#WritingModeProperty",
+    "type": "string",
+    "help": "A CSS value for writing-mode, including CSS-wide keywords and var() expressions."
+  },
+  "xml:base": {
+    "see": "https://www.w3.org/TR/xmlbase/#syntax",
+    "help": "An XML base URI. Deprecated in SVG 2; prefer absolute references.",
+    "type": "string"
+  },
+  "xml:lang": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#LangAttribute",
+    "type": "string"
+  },
+  "xml:space": {
+    "see": "https://w3c.github.io/svgwg/svg2-draft/struct.html#XMLSpaceAttribute",
+    "help": "Deprecated in SVG 2; prefer the white-space presentation attribute.",
+    "type": "enum",
+    "type_enum_values": [
+      "default",
+      "preserve"
+    ]
+  },
+  "xmlns": {
+    "see": "https://www.w3.org/TR/xml-names/#defaulting",
+    "type": "enum",
+    "type_enum_values": [
+      "http://www.w3.org/2000/svg"
+    ]
+  },
+  "xmlns:xlink": {
+    "see": "https://www.w3.org/TR/xlink/",
+    "type": "enum",
+    "type_enum_values": [
+      "http://www.w3.org/1999/xlink"
+    ]
+  }
+}
