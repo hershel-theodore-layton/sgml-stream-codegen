@@ -1292,6 +1292,7 @@
           "week",
           "time",
           "datetime",
+          "datetime-local",
           "number",
           "range",
           "color",
