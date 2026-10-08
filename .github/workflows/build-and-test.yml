@@ -41,3 +41,5 @@ jobs:
           test_engine: test-chain
           lint_engine: pha
           typecheck_engine: hh_server
+      - name: Check generator CLI
+        run: bash tests/generate_cli_test.sh

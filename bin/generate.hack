@@ -2,7 +2,7 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH;
-use namespace HH\Lib\{C, Str, Vec};
+use namespace HH\Lib\{C, IO, Str, Vec};
 use type HTL\Pragma\Pragmas;
 use function file_get_contents,
   is_dir,
@@ -35,8 +35,9 @@ async function generate_async()[defaults]: Awaitable<void> {
   $argv = HH\global_get('argv') |> cast_to_vec_of_string($$);
 
   if (C\count($argv) < 6 || C\count($argv) > 8) {
-    echo Str\format(
-      'Usage: hhvm %s %s %s %s %s %s %s %s ',
+    $stderr = IO\request_error() as nonnull;
+    await $stderr->writeAllAsync(Str\format(
+      "Usage: hhvm %s %s %s %s %s %s %s %s\n",
       $argv[0],
       '<tags-definitions-file> ',
       '<global-attributes-definitions-file> ',
@@ -45,8 +46,8 @@ async function generate_async()[defaults]: Awaitable<void> {
       '<license-header>',
       '[<base-class-name>',
       '[<additional-global-attributes-file>]]',
-    );
-    return;
+    ));
+    exit(64);
   }
 
   $tags_definition_file = realpath($argv[TAGS_DEFINITION_FILE]) |> mixed($$);
