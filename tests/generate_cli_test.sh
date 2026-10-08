@@ -2,6 +2,8 @@
 # sgml-stream-codegen is MIT licensed, see /LICENSE.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# Pass any runtime flags through to every HHVM invocation.
+hhvm_flags=("$@")
 
 scratch=$(mktemp -d)
 trap 'rm -rf "$scratch"' EXIT
@@ -13,7 +15,7 @@ cp "$scratch/output/HTMLElementBase.hack" "$scratch/original"
 
 check_usage_error() {
   local status=0
-  hhvm bin/generate.hack "$@" > "$scratch/stdout" 2> "$scratch/stderr" || status=$?
+  hhvm "${hhvm_flags[@]}" bin/generate.hack "$@" > "$scratch/stdout" 2> "$scratch/stderr" || status=$?
   if [[ "$status" != 64 ]]; then
     echo "Expected usage exit status 64, got $status" >&2
     exit 1
@@ -44,10 +46,10 @@ for optional_count in 0 1 2; do
   if [[ "$optional_count" -eq 2 ]]; then
     args+=("$scratch/globals.json")
   fi
-  hhvm bin/generate.hack "${args[@]}" > "$scratch/stdout" 2> "$scratch/stderr"
+  hhvm "${hhvm_flags[@]}" bin/generate.hack "${args[@]}" > "$scratch/stdout" 2> "$scratch/stderr"
   [[ ! -s "$scratch/stdout" && ! -s "$scratch/stderr" ]]
   [[ -s "$destination/$base_class.hack" ]]
-  hhvm --lint "$destination/$base_class.hack"
+  hhvm "${hhvm_flags[@]}" --lint "$destination/$base_class.hack"
 done
 
 echo 'Generator CLI checks passed.'
