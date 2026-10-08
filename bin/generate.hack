@@ -47,7 +47,7 @@ async function generate_async()[defaults]: Awaitable<void> {
       '[<base-class-name>',
       '[<additional-global-attributes-file>]]',
     ));
-    exit(64);
+    exit(1);
   }
 
   $tags_definition_file = realpath($argv[TAGS_DEFINITION_FILE]) |> mixed($$);
