@@ -3,6 +3,18 @@ set -euo pipefail
 
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
+missing_destination=false
+for library in html-stream-namespaced html-stream-non-namespaced svg-stream-namespaced; do
+  if [[ ! -d "build/$library/src" ]]; then
+    echo "Missing output directory: build/$library/src" >&2
+    missing_destination=true
+  fi
+done
+if [[ "$missing_destination" == true ]]; then
+  echo "Set up all three output destinations before generating; see README.md, Generation setup." >&2
+  exit 1
+fi
+
 echo "html-stream-namespaced..."
 
 hhvm bin/generate.hack \

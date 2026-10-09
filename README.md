@@ -16,13 +16,23 @@ Maybe you have some amazing idea for XHP. If you want to experiment, add it to y
 
  * [Example](https://example.com/some/repository?remove-when-adding-the-first-repository) (short description here)
 
-## How to build your own custom version
+## Generation setup
 
-That depends on what kind of change you want to make. Do you want to add, change, or remove an attribute, base class, comment, interface, or trait? I'd recommend writing a script which takes the `global_attributes.json` or `tags.json` file and transforms it. Use this new file when emitting codegen. When a new version of these files is released, you can regenerate your custom version of our new base. You can check out the [Makefile](./Makefile) to see what arguments to pass to `bin/generate.hack`.
+Set up the output destinations from the generator repository root in a fresh workspace:
 
-If you want to do something else, change the codegen code manually. You can do anything you want, but this comes with a merge burden*. If we change the codegen code and you want to use our new code, you'll have to merge it using git.
+```sh
+git clone git@github.com:hershel-theodore-layton/html-stream-namespaced.git ../html-stream-namespaced
+git clone git@github.com:hershel-theodore-layton/html-stream-non-namespaced.git ../html-stream-non-namespaced
+git clone git@github.com:hershel-theodore-layton/svg-stream-namespaced.git ../svg-stream-namespaced
 
-\* The merge burden is yours to bear and we will not refrain from refactoring / making changes to support this use case.
+mkdir -p build
+ln -s ../../html-stream-namespaced build/html-stream-namespaced
+ln -s ../../html-stream-non-namespaced build/html-stream-non-namespaced
+ln -s ../../svg-stream-namespaced build/svg-stream-namespaced
+./build_all.sh
+```
+
+Generation writes directly into the sibling checkouts' `src/` directories; review their Git diffs afterward. In an existing workspace, reuse the checkouts and `build/` links. `build_all.sh` reports missing destinations before generating.
 
 ## Versioning
 
