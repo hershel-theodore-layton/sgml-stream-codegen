@@ -69,7 +69,7 @@ async function generate_async()[defaults]: Awaitable<void> {
   $build_dir = realpath($argv[BUILD_DIRECTORY]) |> mixed($$);
   invariant($build_dir is string, '%s not found', $argv[BUILD_DIRECTORY]);
   $namespace = $argv[NAMESPACE_NAME] |> $$ === '' ? null : $$;
-  $license_header = $argv[LICENSE_HEADER];
+  $license_header = escape_doc_block_text($argv[LICENSE_HEADER]);
   $base_class = $argv[BASE_CLASS_NAME] ?? 'HTMLElementBase';
   invariant(
     preg_match('/\A[A-Za-z_][A-Za-z0-9_]*\z/', $base_class) === 1,

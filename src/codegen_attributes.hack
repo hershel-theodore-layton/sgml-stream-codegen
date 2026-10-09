@@ -14,7 +14,7 @@ function codegen_attributes(
     $attributes,
     ($name, $attr) ==> Str\format(
       "/**\n * @see %s\n%s */\n%s %s",
-      $attr['see'],
+      escape_doc_block_text($attr['see']),
       wrap_doc_block(Shapes::idx($attr, 'help')),
       type_as_string($attr),
       $name,

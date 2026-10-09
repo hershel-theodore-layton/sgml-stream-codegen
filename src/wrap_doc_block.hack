@@ -8,7 +8,7 @@ function wrap_doc_block(?string $contents)[]: string {
     return '';
   }
 
-  $words = Str\split($contents, ' ');
+  $words = Str\split(escape_doc_block_text($contents), ' ');
 
   $output = vec[];
   $current = vec[];

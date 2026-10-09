@@ -12,7 +12,7 @@ function codegen_tag(
   $file->append(
     Str\format(
       "/**\n * @see %s\n */\nfinal xhp class %s extends %s",
-      $def['see'],
+      escape_doc_block_text($def['see']),
       $tag_name,
       $def['base_class'],
     ),
