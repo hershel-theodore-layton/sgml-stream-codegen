@@ -20,10 +20,7 @@ async function generate_type_asserters_async()[defaults]: Awaitable<void> {
   if (HH\could_include($autoloader)) {
     require_once $autoloader;
     // Abuse the poor typing of array_reduce to invoke a dynamic callable without hh_client noticing
-    \array_reduce(
-      vec[null],
-      HH\dynamic_fun('Facebook\AutoloadMap\initialize'),
-    );
+    \array_reduce(vec[null], HH\dynamic_fun('Facebook\AutoloadMap\initialize'));
   }
 
   await write_file_async<dict<string, AttributeDefinition>>(
