@@ -1,8 +1,8 @@
 /** sgml-stream-codegen is MIT licensed, see /LICENSE. */
 namespace HTL\SGMLStreamCodegen;
 
-use namespace HH\Lib\{File, Str};
-use function HTL\PhaLintersServer\hackfmt_and_sign_hack_source_do_not_use_async;
+use namespace HH\Lib\Str;
+use namespace HTL\HackCompiler;
 
 final class CodegenFile {
   private string $buffer = '';
@@ -28,11 +28,6 @@ final class CodegenFile {
   }
 
   public async function writeToDiskAsync()[defaults]: Awaitable<void> {
-    $signed =
-      await hackfmt_and_sign_hack_source_do_not_use_async($this->toString());
-    $file = File\open_write_only($this->path, File\WriteMode::TRUNCATE);
-    using $file->closeWhenDisposed();
-    using $file->tryLockx(File\LockType::EXCLUSIVE);
-    await $file->writeAllAsync($signed);
+    await HackCompiler\write_source_async($this->toString(), $this->path);
   }
 }

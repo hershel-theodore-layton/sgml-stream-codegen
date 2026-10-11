@@ -2,11 +2,10 @@
 namespace HTL\SGMLStreamCodegen;
 
 use namespace HH;
-use namespace HH\Lib\{File, Str};
-use namespace HTL\TypeVisitor;
+use namespace HH\Lib\Str;
+use namespace HTL\{HackCompiler, TypeVisitor};
 use type HTL\Pragma\Pragmas;
 use type RuntimeException;
-use function HTL\PhaLintersServer\hackfmt_and_sign_hack_source_do_not_use_async;
 use function HTL\StaticTypeAssertionCodegen\{
   emit_body_for_assertion_function,
   from_type,
@@ -58,9 +57,5 @@ code
     $type_name,
     $code,
   );
-  $signed = await hackfmt_and_sign_hack_source_do_not_use_async($source);
-  $file = File\open_write_only($path, File\WriteMode::TRUNCATE);
-  using $file->closeWhenDisposed();
-  using $file->tryLockx(File\LockType::EXCLUSIVE);
-  await $file->writeAllAsync($signed);
+  await HackCompiler\write_source_async($source, $path);
 }
