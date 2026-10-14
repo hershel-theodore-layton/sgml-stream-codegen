@@ -1147,7 +1147,8 @@
         "type_enum_values": [
           "duplicate",
           "wrap",
-          "none"
+          "none",
+          "mirror"
         ]
       },
       "enable-background": {
