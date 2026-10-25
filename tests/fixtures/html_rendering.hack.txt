@@ -1,0 +1,53 @@
+/** sgml-stream-codegen is MIT licensed, see /LICENSE. */
+// Run as a .hack file in an isolated project with both generated HTML libraries
+// and their dependencies available to the autoloader. This lives as .hack.txt
+// because the generator does not depend on its generated libraries.
+use namespace HTL\HTMLStream as H;
+
+<<__EntryPoint>>
+async function main(): Awaitable<void> {
+  // A null expectation means the renderer must reject children.
+  foreach (
+    dict[
+      'namespaced/article empty' => tuple(<H:article />, '<article></article>'),
+      'namespaced/article text' =>
+        tuple(<H:article>text</H:article>, '<article>text</article>'),
+      'namespaced/area' => tuple(<H:area />, '<area>'),
+      'namespaced/embed' => tuple(<H:embed />, '<embed>'),
+      'namespaced/param' => tuple(<H:param />, '<param>'),
+      'namespaced/area text' => tuple(<H:area>text</H:area>, null),
+      'namespaced/embed text' => tuple(<H:embed>text</H:embed>, null),
+      'namespaced/param text' => tuple(<H:param>text</H:param>, null),
+      'root/article empty' => tuple(<article />, '<article></article>'),
+      'root/article text' =>
+        tuple(<article>text</article>, '<article>text</article>'),
+      'root/area' => tuple(<area />, '<area>'),
+      'root/embed' => tuple(<embed />, '<embed>'),
+      'root/param' => tuple(<param />, '<param>'),
+      'root/area text' => tuple(<area>text</area>, null),
+      'root/embed text' => tuple(<embed>text</embed>, null),
+      'root/param text' => tuple(<param>text</param>, null),
+    ] as $name => list($element, $expected)
+  ) {
+    try {
+      $actual = await $element->toHTMLStringAsync();
+    } catch (\HH\InvariantException $e) {
+      invariant(
+        $expected === null &&
+          \HH\Lib\Str\contains($e->getMessage(), 'may not have children'),
+        'Unexpected rejection: %s: %s',
+        $name,
+        $e->getMessage(),
+      );
+      echo $name.': REJECTED children'."\n";
+      continue;
+    }
+    invariant(
+      $actual === $expected,
+      'Unexpected output: %s: %s',
+      $name,
+      $actual,
+    );
+    echo $name.': '.$actual."\n";
+  }
+}

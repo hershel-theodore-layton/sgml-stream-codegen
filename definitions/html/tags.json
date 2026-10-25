@@ -154,7 +154,7 @@
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-area-element",
     "traits": [
-      "SGMLStream\\ElementWithOpenAndCloseTags"
+      "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "article": {
@@ -163,7 +163,7 @@
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-article-element",
     "traits": [
-      "SGMLStream\\ElementWithOpenTagOnly"
+      "SGMLStream\\ElementWithOpenAndCloseTags"
     ]
   },
   "aside": {
@@ -716,7 +716,7 @@
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-embed-element",
     "traits": [
-      "SGMLStream\\ElementWithOpenAndCloseTags"
+      "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "fieldset": {
@@ -1804,7 +1804,7 @@
     "interfaces": [],
     "see": "https://html.spec.whatwg.org/multipage/#the-param-element",
     "traits": [
-      "SGMLStream\\ElementWithOpenAndCloseTags"
+      "SGMLStream\\ElementWithOpenTagOnly"
     ]
   },
   "picture": {
