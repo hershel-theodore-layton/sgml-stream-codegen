@@ -11,8 +11,9 @@ function codegen_tag(
 )[defaults]: void {
   $file->append(
     Str\format(
-      "/**\n * @see %s\n */\nfinal xhp class %s extends %s",
+      "/**\n * @see %s\n%s */\nfinal xhp class %s extends %s",
       escape_doc_block_text($def['see']),
+      wrap_doc_block(Shapes::idx($def, 'help')),
       $tag_name,
       $def['base_class'],
     ),

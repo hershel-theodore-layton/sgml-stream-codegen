@@ -34,11 +34,13 @@ function doc_block_test(TestChain\Chain $chain)[]: TestChain\Chain {
           'interfaces' => vec[],
           'traits' => vec[],
           'see' => "Reference */\r\nnext",
+          'help' => "Legacy element. */\nMore information.",
         ),
         'Example',
       );
       expect($file->toString())->toEqual(
-        "/**\n * @see Reference * / next\n */\n".
+        "/**\n * @see Reference * / next\n".
+        " * Legacy element. * / More information.\n */\n".
         "final xhp class Example extends Base\n{\n\n\n".
         "const string TAG_NAME = 'Example';\n}\n",
       );

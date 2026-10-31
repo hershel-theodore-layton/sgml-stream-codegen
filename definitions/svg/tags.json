@@ -1531,11 +1531,11 @@
       },
       "x": {
         "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
-        "type": "num"
+        "type": "string"
       },
       "y": {
         "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
-        "type": "num"
+        "type": "string"
       }
     },
     "base_class": "SVGElementBase",
@@ -2256,11 +2256,11 @@
       },
       "x": {
         "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-x",
-        "type": "num"
+        "type": "string"
       },
       "y": {
         "see": "https://drafts.csswg.org/filter-effects-1/#element-attrdef-filter-primitive-y",
-        "type": "num"
+        "type": "string"
       }
     },
     "base_class": "SVGElementBase",
@@ -3726,12 +3726,80 @@
         "see": "https://w3c.github.io/svgwg/svg2-draft/geometry.html#Sizing",
         "type": "string"
       },
+      "onafterprint": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint",
+        "type": "string"
+      },
+      "onbeforeprint": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeprint",
+        "type": "string"
+      },
+      "onbeforeunload": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload",
+        "type": "string"
+      },
+      "onhashchange": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onhashchange",
+        "type": "string"
+      },
+      "onlanguagechange": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onlanguagechange",
+        "type": "string"
+      },
+      "onmessage": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessage",
+        "type": "string"
+      },
+      "onmessageerror": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror",
+        "type": "string"
+      },
+      "onoffline": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onoffline",
+        "type": "string"
+      },
+      "ononline": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-ononline",
+        "type": "string"
+      },
+      "onpagehide": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagehide",
+        "type": "string"
+      },
+      "onpagereveal": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagereveal",
+        "type": "string"
+      },
+      "onpageshow": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageshow",
+        "type": "string"
+      },
+      "onpageswap": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageswap",
+        "type": "string"
+      },
+      "onpopstate": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpopstate",
+        "type": "string"
+      },
+      "onrejectionhandled": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onrejectionhandled",
+        "type": "string"
+      },
       "onshow": {
         "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
         "type": "string"
       },
+      "onstorage": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onstorage",
+        "type": "string"
+      },
+      "onunhandledrejection": {
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunhandledrejection",
+        "type": "string"
+      },
       "onunload": {
-        "see": "https://w3c.github.io/svgwg/svg2-draft/interact.html#EventAttributes",
+        "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunload",
         "type": "string"
       },
       "playbackorder": {

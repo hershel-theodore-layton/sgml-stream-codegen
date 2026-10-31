@@ -1,0 +1,146 @@
+/** sgml-stream-codegen is MIT licensed, see /LICENSE. */
+// Run as a .hack file in an isolated project with all three generated libraries
+// and their dependencies available to the autoloader. This lives as .hack.txt
+// because the generator does not depend on its generated libraries.
+use namespace HTL\HTMLStream as H;
+use namespace HTL\SVGStream as S;
+use namespace HTL\SGMLStreamInterfaces as I;
+
+// Attribute reads keep their existing nullable-float API.
+function float_attribute_reads(
+  H\progress $progress,
+  H\meter $meter,
+  \progress $root_progress,
+  \meter $root_meter,
+)[]: vec<?float> {
+  return vec[
+    $progress->:value,
+    $meter->:value,
+    $root_progress->:value,
+    $root_meter->:value,
+  ];
+}
+
+<<__EntryPoint>>
+async function spec_examples(): Awaitable<void> {
+  foreach (
+    dict[
+      'HTML/plaintext editing' => tuple(
+        <H:div contenteditable="plaintext-only" spellcheck="" translate="" />,
+        '<div contenteditable="plaintext-only" spellcheck="" translate=""></div>',
+      ),
+      'HTML/empty editing alias' => tuple(
+        <H:div contenteditable="" />,
+        '<div contenteditable=""></div>',
+      ),
+      'HTML/media capture' => tuple(
+        <H:input type="file" accept="image/*" capture="environment" />,
+        '<input type="file" accept="image/*" capture="environment">',
+      ),
+      'HTML/empty CORS and preload' => tuple(
+        <H:audio crossorigin="" preload="" />,
+        '<audio crossorigin="" preload=""></audio>',
+      ),
+      'HTML/empty blocking' => tuple(
+        <H:link blocking="" crossorigin="" />,
+        '<link blocking="" crossorigin="">',
+      ),
+      'HTML/blocking token whitespace' => tuple(
+        <H:style blocking=" render " />,
+        '<style blocking=" render "></style>',
+      ),
+      'HTML/script empty blocking' => tuple(
+        <H:script blocking="" crossorigin="" />,
+        '<script blocking="" crossorigin=""></script>',
+      ),
+      'HTML/style empty blocking' => tuple(
+        <H:style blocking="" />,
+        '<style blocking=""></style>',
+      ),
+      'HTML/zero progress' => tuple(
+        <H:progress value={0.0} max={10.0} />,
+        '<progress value="0" max="10"></progress>',
+      ),
+      'HTML/fractional progress' => tuple(
+        <H:progress value={0.5} max={10.5} />,
+        '<progress value="0.5" max="10.5"></progress>',
+      ),
+      'HTML/float meter' => tuple(
+        <H:meter value={5.0} min={0.0} max={10.0} low={2.0} high={8.0} optimum={5.0} />,
+        '<meter value="5" min="0" max="10" low="2" high="8" optimum="5"></meter>',
+      ),
+      'HTML/cross-spec globals' => tuple(
+        <H:span part="label" exportparts="label: outer-label" onpointerdown="start(event)" onanimationcancel="cancel()" ontransitioncancel="stop()" ontouchstart="touch(event)" />,
+        '<span part="label" exportparts="label: outer-label" onpointerdown="start(event)" onanimationcancel="cancel()" ontransitioncancel="stop()" ontouchstart="touch(event)"></span>',
+      ),
+      'HTML/media extensions' => tuple(
+        <H:video disableremoteplayback={I\SET} disablepictureinpicture={I\SET} onencrypted="decrypt(event)" onwaitingforkey="waitForKey()" />,
+        '<video disableremoteplayback disablepictureinpicture onencrypted="decrypt(event)" onwaitingforkey="waitForKey()"></video>',
+      ),
+      'HTML/media omission' => tuple(
+        <H:audio disableremoteplayback={I\NOT_SET} onencrypted="decrypt(event)" onwaitingforkey="waitForKey()" />,
+        '<audio onencrypted="decrypt(event)" onwaitingforkey="waitForKey()"></audio>',
+      ),
+      'root/plaintext editing' => tuple(
+        <div contenteditable="plaintext-only" spellcheck="" translate="" />,
+        '<div contenteditable="plaintext-only" spellcheck="" translate=""></div>',
+      ),
+      'root/default media capture' => tuple(
+        <input type="file" accept="image/*" capture="" />,
+        '<input type="file" accept="image/*" capture="">',
+      ),
+      'root/empty CORS and preload' => tuple(
+        <audio crossorigin="" preload="" />,
+        '<audio crossorigin="" preload=""></audio>',
+      ),
+      'root/empty blocking' => tuple(
+        <link blocking="" crossorigin="" />,
+        '<link blocking="" crossorigin="">',
+      ),
+      'root/zero progress' => tuple(
+        <progress value={0.0} max={10.0} />,
+        '<progress value="0" max="10"></progress>',
+      ),
+      'root/float meter' => tuple(
+        <meter value={5.0} min={0.0} max={10.0} low={2.0} high={8.0} optimum={5.0} />,
+        '<meter value="5" min="0" max="10" low="2" high="8" optimum="5"></meter>',
+      ),
+      'root/cross-spec globals' => tuple(
+        <span part="label" exportparts="label: outer-label" onpointerdown="start(event)" />,
+        '<span part="label" exportparts="label: outer-label" onpointerdown="start(event)"></span>',
+      ),
+      'root/media extensions' => tuple(
+        <video disableremoteplayback={I\SET} disablepictureinpicture={I\SET} onencrypted="decrypt(event)" onwaitingforkey="waitForKey()" />,
+        '<video disableremoteplayback disablepictureinpicture onencrypted="decrypt(event)" onwaitingforkey="waitForKey()"></video>',
+      ),
+      'SVG/root window handlers' => tuple(
+        <S:svg onhashchange="changed()" onbeforeprint="prepare()" />,
+        '<svg onhashchange="changed()" onbeforeprint="prepare()"></svg>',
+      ),
+      'SVG/CSS expressions' => tuple(
+        <S:rect fill="var(--accent, red)" opacity="calc(1 / 2)" />,
+        '<rect fill="var(--accent, red)" opacity="calc(1 / 2)"></rect>',
+      ),
+      'SVG/escaped script and style' => tuple(
+        <S:svg>
+          <S:script>{'if (a < b && ready) run();'}</S:script>
+          <S:style>{'text::before { content: "<&"; }'}</S:style>
+        </S:svg>,
+        '<svg><script>if (a &lt; b &amp;&amp; ready) run();</script>'.
+        '<style>text::before { content: &quot;&lt;&amp;&quot;; }</style></svg>',
+      ),
+      'SVG/filter offset region' => tuple(
+        <S:feOffset x="-10%" y="-2px" width="120%" height="120%" dx={2} dy={0} />,
+        '<feOffset x="-10%" y="-2px" width="120%" height="120%" dx="2" dy="0"></feOffset>',
+      ),
+      'SVG/filter shadow region' => tuple(
+        <S:feDropShadow x="-10%" y="-2px" width="120%" height="120%" dx={2} dy={0.5} />,
+        '<feDropShadow x="-10%" y="-2px" width="120%" height="120%" dx="2" dy="0.5"></feDropShadow>',
+      ),
+    ] as $label => list($element, $expected)
+  ) {
+    $actual = await $element->toHTMLStringAsync();
+    invariant($actual === $expected, '%s: expected %s, got %s', $label, $expected, $actual);
+    echo $label.': '.$actual."\n";
+  }
+}

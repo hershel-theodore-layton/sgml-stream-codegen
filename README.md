@@ -4,7 +4,7 @@ Build your own custom native sgml-stream tags from a JSON definition
 
 ## What this code is
 
-This code powers the codegen for html-stream-(non)-namespaced. Those packages are all you need if you wish to use a vanilla, spec-compliant XHP implementation. If you wish to add some things of your own, you can use this code to adapt your version of html-stream to your needs. This codebase is not a library. We don't intend to make this a Composer package. If you wish to use this code, use `git clone`.
+This code generates the typed element and attribute classes for html-stream-(non)-namespaced and svg-stream-namespaced. Document conformance also depends on the author's content models, attribute values, accessibility choices, and the shared sgml-stream serializer. The [specification audit](docs/specification-audit.md) describes coverage and remaining gaps. If you wish to add some things of your own, you can use this code to adapt your version of html-stream to your needs. This codebase is not a library. We don't intend to make this a Composer package. If you wish to use this code, use `git clone`.
 
 ## Why would you want your own html tags?
 
@@ -33,6 +33,8 @@ ln -s ../../svg-stream-namespaced build/svg-stream-namespaced
 ```
 
 Generation writes directly into the sibling checkouts' `src/` directories; review their Git diffs afterward. In an existing workspace, reuse the checkouts and `build/` links. `build_all.sh` reports missing destinations before generating.
+
+Tag definitions may include an optional `help` string, which becomes generated class documentation. Attribute definitions support the same field. Use it to explain syntax and retained legacy features.
 
 ## Versioning
 

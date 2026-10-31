@@ -2,6 +2,7 @@
 namespace HTL\SGMLStreamCodegen;
 
 type TagDefinition = shape(
+  ?'help' => string,
   'attributes' => dict<string, AttributeDefinition>,
   'base_class' => string,
   'interfaces' => vec<string>,

@@ -35,12 +35,14 @@
     "type": "string"
   },
   "contenteditable": {
-    "see": "https://html.spec.whatwg.org/multipage/#attr-contenteditable",
-    "help": "A tristate attribute, not a boolean attribute.",
+    "see": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable",
+    "help": "An enumerated attribute. The empty string and true enable editing; plaintext-only enables plain text editing; false disables editing. Omitting the attribute inherits editability.",
     "type": "enum",
     "type_enum_values": [
+      "",
       "true",
-      "false"
+      "false",
+      "plaintext-only"
     ]
   },
   "dir": {
@@ -73,6 +75,11 @@
       "search",
       "send"
     ]
+  },
+  "exportparts": {
+    "see": "https://drafts.csswg.org/css-shadow-1/#exportparts-attr",
+    "help": "A comma-separated list of part names or mappings such as inner: outer, forwarding parts from nested shadow trees.",
+    "type": "string"
   },
   "headingoffset": {
     "see": "https://html.spec.whatwg.org/multipage/sections.html#attr-headingoffset",
@@ -149,6 +156,11 @@
     "help": "Any text is allowed.",
     "type": "string"
   },
+  "part": {
+    "see": "https://drafts.csswg.org/css-shadow-1/#part-attr",
+    "help": "A space-separated list of names exposing this element for styling from outside its shadow tree.",
+    "type": "string"
+  },
   "popover": {
     "see": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover",
     "type": "enum",
@@ -161,6 +173,22 @@
   },
   "onabort": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onabort",
+    "type": "string"
+  },
+  "onanimationcancel": {
+    "see": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationcancel",
+    "type": "string"
+  },
+  "onanimationend": {
+    "see": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationend",
+    "type": "string"
+  },
+  "onanimationiteration": {
+    "see": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationiteration",
+    "type": "string"
+  },
+  "onanimationstart": {
+    "see": "https://drafts.csswg.org/css-animations-1/#dom-globaleventhandlers-onanimationstart",
     "type": "string"
   },
   "onauxclick": {
@@ -177,6 +205,11 @@
   },
   "onbeforetoggle": {
     "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onbeforetoggle",
+    "type": "string"
+  },
+  "onbeforexrselect": {
+    "see": "https://www.w3.org/TR/webxr-dom-overlays-1/#onbeforexrselect",
+    "help": "Defined by the WebXR DOM Overlays Working Group draft. Available in supported immersive sessions with a DOM overlay.",
     "type": "string"
   },
   "onblur": {
@@ -220,7 +253,7 @@
     "type": "string"
   },
   "oncontextrestored": {
-    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextlost",
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextrestored",
     "type": "string"
   },
   "oncopy": {
@@ -291,6 +324,10 @@
     "see": "https://html.spec.whatwg.org/multipage/#handler-onformdata",
     "type": "string"
   },
+  "ongotpointercapture": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-ongotpointercapture",
+    "type": "string"
+  },
   "oninput": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-oninput",
     "type": "string"
@@ -325,6 +362,10 @@
   },
   "onloadstart": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onloadstart",
+    "type": "string"
+  },
+  "onlostpointercapture": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onlostpointercapture",
     "type": "string"
   },
   "onmousedown": {
@@ -371,6 +412,42 @@
     "see": "https://html.spec.whatwg.org/multipage/#handler-onplaying",
     "type": "string"
   },
+  "onpointercancel": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointercancel",
+    "type": "string"
+  },
+  "onpointerdown": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerdown",
+    "type": "string"
+  },
+  "onpointerenter": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerenter",
+    "type": "string"
+  },
+  "onpointerleave": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerleave",
+    "type": "string"
+  },
+  "onpointermove": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointermove",
+    "type": "string"
+  },
+  "onpointerout": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerout",
+    "type": "string"
+  },
+  "onpointerover": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerover",
+    "type": "string"
+  },
+  "onpointerrawupdate": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerrawupdate",
+    "type": "string"
+  },
+  "onpointerup": {
+    "see": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerup",
+    "type": "string"
+  },
   "onprogress": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onprogress",
     "type": "string"
@@ -395,6 +472,16 @@
     "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onscrollend",
     "type": "string"
   },
+  "onscrollsnapchange": {
+    "see": "https://drafts.csswg.org/css-scroll-snap-2/#event-handlers-on-elements-document-and-window-objects",
+    "help": "Defined by the CSS Scroll Snap Level 2 Working Group editor's draft; browser support varies.",
+    "type": "string"
+  },
+  "onscrollsnapchanging": {
+    "see": "https://drafts.csswg.org/css-scroll-snap-2/#event-handlers-on-elements-document-and-window-objects",
+    "help": "Defined by the CSS Scroll Snap Level 2 Working Group editor's draft; browser support varies.",
+    "type": "string"
+  },
   "onsecuritypolicyviolation": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onsecuritypolicyviolation",
     "type": "string"
@@ -409,6 +496,14 @@
   },
   "onselect": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onselect",
+    "type": "string"
+  },
+  "onselectionchange": {
+    "see": "https://www.w3.org/TR/selection-api/#extensions-to-globaleventhandlers-interface",
+    "type": "string"
+  },
+  "onselectstart": {
+    "see": "https://www.w3.org/TR/selection-api/#extensions-to-globaleventhandlers-interface",
     "type": "string"
   },
   "onslotchange": {
@@ -435,12 +530,64 @@
     "see": "https://html.spec.whatwg.org/multipage/#handler-ontoggle",
     "type": "string"
   },
+  "ontouchcancel": {
+    "see": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+    "type": "string"
+  },
+  "ontouchend": {
+    "see": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+    "type": "string"
+  },
+  "ontouchmove": {
+    "see": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+    "type": "string"
+  },
+  "ontouchstart": {
+    "see": "https://w3c.github.io/touch-events/#extensions-to-the-globaleventhandlers-mixin",
+    "type": "string"
+  },
+  "ontransitioncancel": {
+    "see": "https://drafts.csswg.org/css-transitions-1/#dom-globaleventhandlers-ontransitioncancel",
+    "type": "string"
+  },
+  "ontransitionend": {
+    "see": "https://drafts.csswg.org/css-transitions-1/#dom-globaleventhandlers-ontransitionend",
+    "type": "string"
+  },
+  "ontransitionrun": {
+    "see": "https://drafts.csswg.org/css-transitions-1/#dom-globaleventhandlers-ontransitionrun",
+    "type": "string"
+  },
+  "ontransitionstart": {
+    "see": "https://drafts.csswg.org/css-transitions-1/#dom-globaleventhandlers-ontransitionstart",
+    "type": "string"
+  },
   "onvolumechange": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onvolumechange",
     "type": "string"
   },
   "onwaiting": {
     "see": "https://html.spec.whatwg.org/multipage/#handler-onwaiting",
+    "type": "string"
+  },
+  "onwebkitanimationend": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkitanimationend",
+    "help": "Legacy alias of onanimationend; prefer the unprefixed handler.",
+    "type": "string"
+  },
+  "onwebkitanimationiteration": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkitanimationiteration",
+    "help": "Legacy alias of onanimationiteration; prefer the unprefixed handler.",
+    "type": "string"
+  },
+  "onwebkitanimationstart": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkitanimationstart",
+    "help": "Legacy alias of onanimationstart; prefer the unprefixed handler.",
+    "type": "string"
+  },
+  "onwebkittransitionend": {
+    "see": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-onwebkittransitionend",
+    "help": "Legacy alias of ontransitionend; prefer the unprefixed handler.",
     "type": "string"
   },
   "onwheel": {
@@ -453,14 +600,15 @@
   },
   "slot": {
     "see": "https://html.spec.whatwg.org/multipage/#attr-slot",
-    "help": "As far as I understand, any string is valid, since <slot name=?> is allowed to be any string.",
+    "help": "The name of the shadow-tree slot to which this element is assigned. The empty string selects the default slot.",
     "type": "string"
   },
   "spellcheck": {
-    "see": "https://html.spec.whatwg.org/multipage/#attr-spellcheck",
-    "help": "A tristate attribute, not a boolean attribute.",
+    "see": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck",
+    "help": "An enumerated attribute. The empty string and true enable checking; false disables checking. Omitting the attribute uses the default behavior.",
     "type": "enum",
     "type_enum_values": [
+      "",
       "true",
       "false"
     ]
@@ -480,9 +628,10 @@
     "type": "string"
   },
   "translate": {
-    "see": "https://html.spec.whatwg.org/multipage/#attr-translate",
+    "see": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate",
     "type": "enum",
     "type_enum_values": [
+      "",
       "yes",
       "no"
     ]

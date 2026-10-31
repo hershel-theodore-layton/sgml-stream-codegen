@@ -3,7 +3,7 @@
     "attributes": {
       "download": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-download",
-        "help": "A valid file name.",
+        "help": "Requests a download. A non-empty value suggests a filename; an empty value leaves the filename to the browser.",
         "type": "string"
       },
       "href": {
@@ -43,7 +43,7 @@
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name or keyword, such as \"_blank\", \"_self\", \"_parent\", or \"_top\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword.",
         "type": "string"
       },
       "type": {
@@ -91,7 +91,7 @@
       },
       "download": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-download",
-        "help": "A valid file name.",
+        "help": "Requests a download. A non-empty value suggests a filename; an empty value leaves the filename to the browser.",
         "type": "string"
       },
       "href": {
@@ -100,8 +100,8 @@
         "type": "string"
       },
       "hreflang": {
-        "see": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang",
-        "help": "A valid BCP 47 language tag.",
+        "see": "https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features",
+        "help": "Obsolete and non-conforming on area elements. Retained for compatibility; current HTML specifies no useful behavior for this attribute.",
         "type": "string"
       },
       "ping": {
@@ -141,12 +141,12 @@
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-target",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name or keyword, such as \"_blank\", \"_self\", \"_parent\", or \"_top\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword.",
         "type": "string"
       },
       "type": {
-        "see": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type",
-        "help": "A MIME type string.",
+        "see": "https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features",
+        "help": "Obsolete and non-conforming on area elements. Retained for compatibility; current HTML specifies no useful behavior for this attribute.",
         "type": "string"
       }
     },
@@ -189,9 +189,15 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-crossorigin",
         "type": "enum",
         "type_enum_values": [
+          "",
           "anonymous",
           "use-credentials"
         ]
+      },
+      "disableremoteplayback": {
+        "see": "https://w3c.github.io/remote-playback/#the-disableremoteplayback-attribute",
+        "help": "Disables remote playback of the media element.",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
       "loading": {
         "see": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading",
@@ -209,10 +215,19 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-muted",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
+      "onencrypted": {
+        "see": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onencrypted",
+        "type": "string"
+      },
+      "onwaitingforkey": {
+        "see": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onwaitingforkey",
+        "type": "string"
+      },
       "preload": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-preload",
         "type": "enum",
         "type_enum_values": [
+          "",
           "none",
           "metadata",
           "auto"
@@ -249,7 +264,7 @@
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-base-target",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name or keyword, such as \"_blank\", \"_self\", \"_parent\", or \"_top\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword.",
         "type": "string"
       }
     },
@@ -388,7 +403,7 @@
     "attributes": {
       "command": {
         "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command",
-        "help": "Valid options include: toggle-popover, show-popover, hide-popover, close, request-close, show-modal, and a custom command keyword of your choosing.",
+        "help": "A built-in command such as \"toggle-popover\", \"show-popover\", \"hide-popover\", \"close\", \"request-close\", or \"show-modal\", or a custom command beginning with \"--\".",
         "type": "string"
       },
       "commandfor": {
@@ -434,7 +449,7 @@
       },
       "formtarget": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formtarget",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name or keyword, such as \"_blank\", \"_self\", \"_parent\", or \"_top\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword.",
         "type": "string"
       },
       "name": {
@@ -810,7 +825,7 @@
       },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-form-name",
-        "help": "A name which is not the empty string. It must be unique within the context of the current form.",
+        "help": "A non-empty name, unique among forms in the same forms collection.",
         "type": "string"
       },
       "novalidate": {
@@ -824,7 +839,7 @@
       },
       "target": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fs-target",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name or keyword, such as \"_blank\", \"_self\", \"_parent\", or \"_top\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword.",
         "type": "string"
       }
     },
@@ -954,6 +969,11 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-allowfullscreen",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
+      "csp": {
+        "see": "https://w3c.github.io/webappsec-cspee/#csp-attribute",
+        "help": "A non-empty serialized Content Security Policy of at most 4096 characters, without report-uri or report-to directives. Defined by the CSP Embedded Enforcement Working Group editor's draft; browser support varies.",
+        "type": "string"
+      },
       "height": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
         "type": "int"
@@ -968,7 +988,7 @@
       },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-iframe-name",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name: a non-empty name that does not begin with \"_\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name.",
         "type": "string"
       },
       "referrerpolicy": {
@@ -1028,6 +1048,7 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-img-crossorigin",
         "type": "enum",
         "type_enum_values": [
+          "",
           "anonymous",
           "use-credentials"
         ]
@@ -1136,6 +1157,16 @@
         "help": "Either \"on\" or \"off\", or autofill detail tokens.",
         "type": "string"
       },
+      "capture": {
+        "see": "https://www.w3.org/TR/html-media-capture/#the-capture-attribute",
+        "help": "For file inputs with an accept attribute, requests media capture. \"user\" prefers a user-facing camera, \"environment\" an outward-facing camera; an empty value uses the browser's default capture mode.",
+        "type": "enum",
+        "type_enum_values": [
+          "",
+          "user",
+          "environment"
+        ]
+      },
       "checked": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-checked",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
@@ -1149,8 +1180,8 @@
         ]
       },
       "dirname": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
-        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the URL-encoded parameters sent to the server.",
+        "see": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+        "help": "A non-empty name for the submitted directionality field, whose value is \"ltr\" or \"rtl\". The name is used exactly as supplied.",
         "type": "string"
       },
       "disabled": {
@@ -1191,7 +1222,7 @@
       },
       "formtarget": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-fs-formtarget",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name or keyword, such as \"_blank\", \"_self\", \"_parent\", or \"_top\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword.",
         "type": "string"
       },
       "height": {
@@ -1303,7 +1334,8 @@
           "image",
           "reset",
           "button"
-        ]
+        ],
+        "help": "The \"datetime\" value is retained for compatibility; it is not a current HTML input type and falls back to a text control. Use \"datetime-local\" for a local date and time."
       },
       "value": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-input-value",
@@ -1398,11 +1430,8 @@
       },
       "blocking": {
         "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking",
-        "help": "Not very useful at this time. It is not possible to use this attribute to make something that was render-blocking not render-blocking.",
-        "type": "enum",
-        "type_enum_values": [
-          "render"
-        ]
+        "help": "An unordered set of unique space-separated tokens. The supported token is \"render\"; an empty set is allowed.",
+        "type": "string"
       },
       "color": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-color",
@@ -1413,6 +1442,7 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-crossorigin",
         "type": "enum",
         "type_enum_values": [
+          "",
           "anonymous",
           "use-credentials"
         ]
@@ -1483,7 +1513,7 @@
       },
       "sizes": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-link-sizes",
-        "help": "Either the string \"any\" or two pixel values, separated by an \"x\".",
+        "help": "An unordered set of unique space-separated tokens: \"any\" or sizes such as \"16x16 32x32\". Sizes use two pixel dimensions separated by \"x\".",
         "type": "string"
       },
       "type": {
@@ -1512,7 +1542,7 @@
     "attributes": {
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-map-name",
-        "help": "Any name.",
+        "help": "A non-empty name without ASCII whitespace, unique among map elements in the same tree. If id is also specified, both values must match.",
         "type": "string"
       }
     },
@@ -1652,7 +1682,7 @@
       },
       "name": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-object-name",
-        "help": "A valid browsing context name, for example, \"_blank\", \"_self\" or \"_parent\". For more information, see https://html.spec.whatwg.org/multipage/browsers.html#valid-browsing-context-name-or-keyword.",
+        "help": "A valid navigable target name: a non-empty name that does not begin with \"_\". See https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name.",
         "type": "string"
       },
       "type": {
@@ -1661,8 +1691,8 @@
         "type": "string"
       },
       "usemap": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-hyperlink-usemap",
-        "help": "A hash-name reference to a map element.",
+        "see": "https://html.spec.whatwg.org/multipage/obsolete.html#non-conforming-features",
+        "help": "Obsolete and non-conforming on object elements. Retained for compatibility; use an img element for image maps.",
         "type": "string"
       },
       "width": {
@@ -1790,22 +1820,23 @@
   "param": {
     "attributes": {
       "name": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-param-name",
+        "see": "https://html.spec.whatwg.org/multipage/obsolete.html#param",
         "help": "Any name.",
         "type": "string"
       },
       "value": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-param-value",
+        "see": "https://html.spec.whatwg.org/multipage/obsolete.html#param",
         "help": "Any text is allowed.",
         "type": "string"
       }
     },
     "base_class": "HTMLElementBase",
     "interfaces": [],
-    "see": "https://html.spec.whatwg.org/multipage/#the-param-element",
+    "see": "https://html.spec.whatwg.org/multipage/obsolete.html#param",
     "traits": [
       "SGMLStream\\ElementWithOpenTagOnly"
-    ]
+    ],
+    "help": "Obsolete and non-conforming in current HTML. Retained for compatibility; use the object element's data attribute to identify the external resource."
   },
   "picture": {
     "attributes": {},
@@ -1828,11 +1859,11 @@
   "progress": {
     "attributes": {
       "max": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-progress-value",
+        "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max",
         "type": "float"
       },
       "value": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-progress-max",
+        "see": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value",
         "type": "float"
       }
     },
@@ -1911,16 +1942,14 @@
       },
       "blocking": {
         "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking",
-        "help": "Not very useful at this time. It is not possible to use this attribute to make an inline script not render-blocking.",
-        "type": "enum",
-        "type_enum_values": [
-          "render"
-        ]
+        "help": "An unordered set of unique space-separated tokens. The supported token is \"render\"; an empty set is allowed.",
+        "type": "string"
       },
       "crossorigin": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-script-crossorigin",
         "type": "enum",
         "type_enum_values": [
+          "",
           "anonymous",
           "use-credentials"
         ]
@@ -1969,8 +1998,8 @@
         "type": "string"
       },
       "type": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-script-type",
-        "help": "An empty string or a JavaScript MIME type for non-module JavaScript. \"module\" for module JavaScript. Any other value makes this script tag a data block.",
+        "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",
+        "help": "An empty string or JavaScript MIME type selects a classic script; \"module\" selects a module script. \"importmap\" and \"speculationrules\" contain JSON for import maps and speculation rule sets. Other non-JavaScript MIME types identify data blocks.",
         "type": "string"
       }
     },
@@ -2138,11 +2167,8 @@
     "attributes": {
       "blocking": {
         "see": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking",
-        "help": "Not very useful at this time. It is not possible to use this attribute to make an inline stylesheet not render-blocking.",
-        "type": "enum",
-        "type_enum_values": [
-          "render"
-        ]
+        "help": "An unordered set of unique space-separated tokens. The supported token is \"render\"; an empty set is allowed.",
+        "type": "string"
       },
       "media": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-style-media",
@@ -2229,7 +2255,7 @@
     "attributes": {
       "for": {
         "see": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-for",
-        "help": "Allows for out of order html streaming. Finds an html processing instruction, f.e. <?here> and renders the children of the template there.",
+        "help": "The name of a <?marker> or <?start> processing instruction in the same tree. Matches its name attribute to insert content or replace a range.",
         "type": "string"
       },
       "shadowrootmode": {
@@ -2284,8 +2310,8 @@
         "type": "int"
       },
       "dirname": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-fe-dirname",
-        "help": "Any name that is not an empty string. The browser will implicitly append `.dir` in the URL-encoded parameters sent to the server.",
+        "see": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+        "help": "A non-empty name for the submitted directionality field, whose value is \"ltr\" or \"rtl\". The name is used exactly as supplied.",
         "type": "string"
       },
       "disabled": {
@@ -2402,8 +2428,8 @@
   "time": {
     "attributes": {
       "datetime": {
-        "see": "https://html.spec.whatwg.org/multipage/#attr-time-datetime",
-        "help": "Valid date string with optional time. See https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time for more information.",
+        "see": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime",
+        "help": "A machine-readable month, date, yearless date, time, local or global date and time, time-zone offset, week, year, or duration. See the linked specification for the permitted syntaxes.",
         "type": "string"
       }
     },
@@ -2513,9 +2539,20 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-crossorigin",
         "type": "enum",
         "type_enum_values": [
+          "",
           "anonymous",
           "use-credentials"
         ]
+      },
+      "disablepictureinpicture": {
+        "see": "https://w3c.github.io/picture-in-picture/#disable-pip",
+        "help": "Requests that the browser disable Picture-in-Picture for this video. The browser may honor this request.",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
+      },
+      "disableremoteplayback": {
+        "see": "https://w3c.github.io/remote-playback/#the-disableremoteplayback-attribute",
+        "help": "Disables remote playback of the media element.",
+        "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
       "height": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-dim-height",
@@ -2537,6 +2574,22 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-muted",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
       },
+      "onencrypted": {
+        "see": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onencrypted",
+        "type": "string"
+      },
+      "onenterpictureinpicture": {
+        "see": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-onenterpictureinpicture",
+        "type": "string"
+      },
+      "onleavepictureinpicture": {
+        "see": "https://w3c.github.io/picture-in-picture/#dom-htmlvideoelement-onleavepictureinpicture",
+        "type": "string"
+      },
+      "onwaitingforkey": {
+        "see": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onwaitingforkey",
+        "type": "string"
+      },
       "playsinline": {
         "see": "https://html.spec.whatwg.org/multipage/#attr-video-playsinline",
         "type": "SGMLStreamInterfaces\\BooleanAttribute"
@@ -2550,6 +2603,7 @@
         "see": "https://html.spec.whatwg.org/multipage/#attr-media-preload",
         "type": "enum",
         "type_enum_values": [
+          "",
           "none",
           "metadata",
           "auto"
